@@ -14,7 +14,7 @@ import painter_bridge as pb
 
 Image.MAX_IMAGE_PIXELS = None
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/_tools/work/"
-H = "C:/Users/lebea/Documents/Assets/Headgear/"
+H = "D:/3D Source Library/Headgear/"
 
 
 def gl(src, dst):

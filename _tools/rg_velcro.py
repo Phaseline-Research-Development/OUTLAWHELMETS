@@ -13,7 +13,7 @@ from PIL import Image
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 PW = ROOT + "_tools/work/painter/"
 SW = PW + "swatches/"
-V = "C:/Users/lebea/Documents/Assets/Headgear/SF_V2/SF_V2/tex/"
+V = "D:/3D Source Library/Headgear/SF_V2/SF_V2/tex/"
 REG = np.load(PW + "layer_regions.npz")
 VEL, SHELL = REG["09_Bebra_Velcro"], REG["08_Plastic_Grainy_Soft"]
 DARKER = 0.88

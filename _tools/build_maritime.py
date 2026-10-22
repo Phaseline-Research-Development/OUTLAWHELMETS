@@ -19,7 +19,7 @@ from mathutils.kdtree import KDTree
 TOOLS = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(TOOLS, "work", "maritime", "fbx")
 TEMPLATE = os.path.join(TOOLS, "template", "SF V2 Bump (Rigged).fbx")
-SRC = "C:/Users/lebea/Documents/Assets/Headgear/"
+SRC = "D:/3D Source Library/Headgear/"
 SURVEY = "C:/Users/lebea/Documents/Github/Shadows-Helmets/_tools/work/fast_survey.json"
 ITEM_SHIFT = (0.0, 0.02, -1.70)
 UCX_MAT = "plastic_5EAA7FB0A83F90CF"

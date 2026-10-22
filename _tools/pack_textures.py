@@ -9,7 +9,7 @@ import numpy as np
 from PIL import Image
 
 Image.MAX_IMAGE_PIXELS = None
-A = "C:/Users/lebea/Documents/Assets/Headgear/New folder/"
+A = "D:/3D Source Library/Headgear/New folder/"
 CARS = "C:/Users/lebea/OneDrive/Desktop/Cars/"
 OUT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/SFHELMETS/ASSETS/Helmet Accessories/"
 RES = 2048

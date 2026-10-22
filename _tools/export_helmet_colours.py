@@ -13,7 +13,7 @@ import glob, json, os, re, socket, sys, time
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 PW = ROOT + "_tools/work/painter/"
 SW = PW + "swatches/"
-V = "C:/Users/lebea/Documents/Assets/Headgear/SF_V2/SF_V2/tex/"
+V = "D:/3D Source Library/Headgear/SF_V2/SF_V2/tex/"
 AFT = "C:/Users/lebea/OneDrive/Desktop/Cars/Helmet_CRYE_Airframe_v03/Helmet_CRYE_Airframe_v03/Textures/PBR_Helmet_CRYE_Airframe_tx/"
 KEYS = ("velcro", "nylon", "composite", "grain", "rubber")
 
@@ -61,7 +61,7 @@ def last(tag, key):
     return max(files, key=lambda f: int(re.search(rf"{re.escape(tag)}(\d)_", os.path.basename(f)).group(1)))
 
 
-MS = "C:/Users/lebea/Documents/Assets/Headgear/OpscoreMaritime/OpscoreMaritime/"
+MS = "D:/3D Source Library/Headgear/OpscoreMaritime/OpscoreMaritime/"
 MUIDS = json.load(open(ROOT + "_tools/work/maritime/painter/uids.json")) if os.path.exists(ROOT + "_tools/work/maritime/painter/uids.json") else {}
 HELMETS["maritime"] = {
     "spp": ROOT + "_tools/work/maritime/painter/MT_texturing.spp", "prefix": "", "sets": MUIDS,
@@ -69,7 +69,7 @@ HELMETS["maritime"] = {
              "KitA": {k: MS + "KitAVelcro/KitA_co.png" for k in ("AOR1", "MC", "OD", "RG", "TAN")}},
     "camo": {"AOR1": ("MT_AOR1", True), "MC": ("MC", False)},
 }
-XS = "C:/Users/lebea/Documents/Assets/Headgear/OpscoreXP_Carbon/OpscoreXP_Carbon/"
+XS = "D:/3D Source Library/Headgear/OpscoreXP_Carbon/OpscoreXP_Carbon/"
 XUIDS = json.load(open(ROOT + "_tools/work/xp/painter/uids.json")) if os.path.exists(ROOT + "_tools/work/xp/painter/uids.json") else {}
 _xpb = {k: XS + ("XP/pbr/xp_low_XP_BaseColor.png" if k in ("MC", "MCB") else "XP/Tan/pbr/xp_tan_XP_BaseColor.png") for k in ("AOR1", "MC", "OD", "RG", "TAN")}
 HELMETS["xp"] = {

@@ -9,7 +9,7 @@ import json, socket, time
 
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 PD = ROOT + "_tools/work/maritime/painter/"
-S = "C:/Users/lebea/Documents/Assets/Headgear/OpscoreMaritime/OpscoreMaritime/"
+S = "D:/3D Source Library/Headgear/OpscoreMaritime/OpscoreMaritime/"
 
 
 def painter(code, timeout=900):

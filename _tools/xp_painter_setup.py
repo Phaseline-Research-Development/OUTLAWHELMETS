@@ -10,7 +10,7 @@ import painter_bridge as pb
 
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 PD = ROOT + "_tools/work/xp/painter/"
-X = "C:/Users/lebea/Documents/Assets/Headgear/OpscoreXP_Carbon/OpscoreXP_Carbon/"
+X = "D:/3D Source Library/Headgear/OpscoreXP_Carbon/OpscoreXP_Carbon/"
 SETS = {
     "XP1": (("xp_low_XP_BaseColor", "xp_low_XP_Roughness", "xp_low_XP_Metallic", "XP_ao"),
             {"Bebra_Velcro": None, "Plastic Grainy Soft": "XP1_shell", "Nylon Webbing": "XP1_nylon", "Plastic Base Grain": "XP1_grain",

@@ -14,7 +14,7 @@ Image.MAX_IMAGE_PIXELS = None
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 A = ROOT + "SFHELMETS/ASSETS/"
 WORK = ROOT + "_tools/work/"
-VN = "C:/Users/lebea/Documents/Assets/Headgear/SF_V2/SF_V2/tex/aor1/SF_normal.png"
+VN = "D:/3D Source Library/Headgear/SF_V2/SF_V2/tex/aor1/SF_normal.png"
 SETS = {"HELMET AOR1": ("AOR1SF_BCR.tif", "AOR1SF_NMO.tif"), "HELMET BLACK": ("mcbSF_BCR.tif", "mcbSF_NMO.tif"),
         "HELMET GREEN": ("grSF_BCR.tif", "grSF_NMO.tif"), "HELMET MC": ("SF_BCR.tif", "SF_NMO.tif"),
         "HELMET RG": ("RGSF_BCR.tif", "RGSF_NMO.tif"), "HELMET TAN": ("tanSF_BCR.tif", "tanSF_NMO.tif")}

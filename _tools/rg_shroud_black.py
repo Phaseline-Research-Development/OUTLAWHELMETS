@@ -15,7 +15,7 @@ from PIL import Image
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 PW = ROOT + "_tools/work/painter/"
 SW = PW + "swatches/"
-V = "C:/Users/lebea/Documents/Assets/Headgear/SF_V2/SF_V2/tex/"
+V = "D:/3D Source Library/Headgear/SF_V2/SF_V2/tex/"
 exec(open(ROOT + "_tools/rg_velcro.py").read().split("if len(sys.argv)")[0])
 REG = np.load(PW + "shroud_region_1024.npy")
 VEL = np.load(PW + "layer_regions.npz")["09_Bebra_Velcro"]

@@ -17,7 +17,7 @@ from mathutils.bvhtree import BVHTree
 from PIL import Image, ImageDraw
 
 TOOLS = os.path.dirname(os.path.abspath(__file__))
-SRC = "C:/Users/lebea/Documents/Assets/Headgear/"
+SRC = "D:/3D Source Library/Headgear/"
 OUT = os.path.join(TOOLS, "work", "xp", "painter", "masks")
 REG = np.load(os.path.join(TOOLS, "work", "painter", "layer_regions.npz"))
 LAYER_CLASS = {"04_Rubber_Raw": "rubber", "05_Plastic_Composite": "composite", "06_Plastic_Base_Grain": "grain",

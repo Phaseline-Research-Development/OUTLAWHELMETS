@@ -14,7 +14,7 @@ from PIL import Image
 ROOT = "C:/Users/lebea/Documents/Github/OUTLAWHELMETS/"
 WORK = ROOT + "_tools/work/"
 PW = WORK + "painter/"
-V = "C:/Users/lebea/Documents/Assets/Headgear/SF_V2/SF_V2/tex/"
+V = "D:/3D Source Library/Headgear/SF_V2/SF_V2/tex/"
 CAMO = "C:/Users/lebea/Downloads/camopk/"
 REGIONS = np.load(PW + "layer_regions.npz")
 BUMP = {"AOR1": "HELMET AOR1_AOR1SF_BCR.tif", "MCB": "HELMET BLACK_mcbSF_BCR.tif", "OD": "HELMET GREEN_grSF_BCR.tif",
