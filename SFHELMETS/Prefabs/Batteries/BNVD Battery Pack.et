@@ -78,7 +78,6 @@ GenericEntity {
   BaseLoadoutClothComponent "{535B23056593EA79}" {
    Slots {
     LoadoutSlotInfo ZAP_Battery {
-     Prefab "{C65F37E0B4F944C5}Prefabs/GMS/ZAP/Fits/Battery_BNVD/ZAP_Dynamic.et"
      PivotID "Head"
      Offset 0.0000052000 0.1067718267 0.1429330707
      Angles 90 0 180
