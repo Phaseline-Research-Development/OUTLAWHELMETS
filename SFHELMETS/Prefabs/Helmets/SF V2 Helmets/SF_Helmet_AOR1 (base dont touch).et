@@ -103,15 +103,15 @@ GameEntity {
     LoadoutSlotInfo ZAP_Left {
      Prefab "{87BA64CB1C424505}Prefabs/GMS/ZAP/Fits/SF_Ballistic_left/ZAP_Dynamic.et"
      PivotID "Head"
-     Offset 0.07689657062292099 0.17070719599723816 -0.007376041263341904
-     Angles 64.158592224 -90.000007629 0.000032316
+     Offset 0.0868 0.16 -0.0074
+     Angles 71 -90 0
      AreaType GMS_Zap_SF_Left {}
     }
     LoadoutSlotInfo ZAP_Right {
      Prefab "{C60EAAFAFDBA4A4B}Prefabs/GMS/ZAP/Fits/SF_Ballistic_right/ZAP_Dynamic.et"
      PivotID "Head"
-     Offset -0.07668817043304443 0.17070290446281433 -0.007375240791589022
-     Angles 64.157569885 90.000030518 -0.000032314
+     Offset -0.0866 0.16 -0.0074
+     Angles 71 90 0
      AreaType GMS_Zap_SF_Right {}
     }
     LoadoutSlotInfo ZAP_Back {

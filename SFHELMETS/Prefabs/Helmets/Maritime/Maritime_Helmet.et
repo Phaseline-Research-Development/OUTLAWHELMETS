@@ -103,15 +103,15 @@ GameEntity {
     LoadoutSlotInfo ZAP_Left {
      Prefab "{A4994FA19408412D}Prefabs/GMS/ZAP/Fits/Maritime_left/ZAP_Dynamic.et"
      PivotID "Head"
-     Offset 0.0769282728433609 0.1686166226863861 -0.00739654153585434
-     Angles 64.158592224 -90.000007629 0.000032316
+     Offset 0.0868 0.1579 -0.0074
+     Angles 71 -90 0
      AreaType GMS_Zap_Maritime_Left {}
     }
     LoadoutSlotInfo ZAP_Right {
      Prefab "{6CAB03C607954904}Prefabs/GMS/ZAP/Fits/Maritime_right/ZAP_Dynamic.et"
      PivotID "Head"
-     Offset -0.0773506686091423 0.16862735152244568 -0.007399841211736202
-     Angles 64.157569885 90.000030518 -0.000032314
+     Offset -0.0873 0.1579 -0.0074
+     Angles 71 90 0
      AreaType GMS_Zap_Maritime_Right {}
     }
     LoadoutSlotInfo ZAP_Back {
