@@ -8,7 +8,28 @@ GenericEntity {
   }
   OUTLAW_FirstPersonHideComponent "{675FD3508DB88F33}" {
   }
+  ClothNodeStorageComponent "{4D413F180E7147F1}" {
+   Attributes SCR_ItemAttributeCollection "{696852C340FD400A}" {
+    ItemDisplayName UIInfo "{9897470BFDE84EA8}" {
+     Name "PR&D - PVS-31 BRS (Coyote)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{97DA142D6B7D4F64}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{409865B229B4489D}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+   StoragePurpose 0x40 0
+  }
   InventoryItemComponent "{D3C39FA382C681BB}" {
+   Enabled 0
    Attributes SCR_ItemAttributeCollection "{F01387B3640C76AB}" {
     ItemDisplayName UIInfo "{FE6B43F038037A13}" {
      Name "PR&D - PVS-31 BRS (Coyote)"
@@ -55,6 +76,16 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{112A732C415A00B0}" {
+   Slots {
+    LoadoutSlotInfo ZAP_Battery {
+     Prefab "{B824EEA6BF604E41}Prefabs/GMS/ZAP/Fits/Battery_PVS31_BRS/ZAP_Dynamic.et"
+     PivotID "Head"
+     Offset 0.0023140991 0.0822963417 0.1645228863
+     Angles 89.8748855591 0.1370921135 -179.8632202148
+     AreaType GMS_Zap_BRS_Battery {}
+    }
+   }
+
    AreaType OUTLAW_Helmet_BRS "{1AE323F79160AF70}" {
    }
    WornModel "{5559E5E49B787310}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/batterypack.xob"
@@ -93,3 +124,5 @@ GenericEntity {
   }
  }
 }
+
+

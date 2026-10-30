@@ -8,7 +8,28 @@ GenericEntity {
   }
   OUTLAW_FirstPersonHideComponent "{952C12C282DF9098}" {
   }
+  ClothNodeStorageComponent "{8CB48312238B4C21}" {
+   Attributes SCR_ItemAttributeCollection "{ECECE23C74AF4BC0}" {
+    ItemDisplayName UIInfo "{70782C4C60004642}" {
+     Name "PR&D - PVS-31 BRS (OD) (Maritime)"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{C79FD8406E9248B5}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{63498F7583D84A7B}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+   StoragePurpose 0x40 0
+  }
   InventoryItemComponent "{793F32CA67DCA0FF}" {
+   Enabled 0
    Attributes SCR_ItemAttributeCollection "{0FEE97F11BB3CEA0}" {
     ItemDisplayName UIInfo "{1729557EAEEE7501}" {
      Name "PR&D - PVS-31 BRS (OD) (Maritime)"
@@ -55,6 +76,16 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{455D99B9442528F2}" {
+   Slots {
+    LoadoutSlotInfo ZAP_Battery {
+     Prefab "{B824EEA6BF604E41}Prefabs/GMS/ZAP/Fits/Battery_PVS31_BRS/ZAP_Dynamic.et"
+     PivotID "Head"
+     Offset 0.0023140991 0.0822963417 0.1645228863
+     Angles 89.8748855591 0.1370921135 -179.8632202148
+     AreaType GMS_Zap_BRS_Battery {}
+    }
+   }
+
    AreaType OUTLAW_Helmet_MaritimeBRS "{1E35CE5367163754}" {
    }
    WornModel "{089BC710CC056175}ASSETS/Helmet Accessories/BATTERYPACK/OD BRS/Maritime/batterypack_Maritime.xob"
@@ -93,3 +124,5 @@ GenericEntity {
   }
  }
 }
+
+

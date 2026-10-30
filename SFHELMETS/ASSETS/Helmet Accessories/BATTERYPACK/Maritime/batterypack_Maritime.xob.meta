@@ -3,14 +3,22 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    ExportSkinning 1
+   ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{46D7769B28962DD4}" {
      SourceMaterial "MI_PVS31_BRS_MC"
      AssignedMaterial "{2AF20FDC911F7C48}ASSETS/Helmet Accessories/BATTERYPACK/Data/MI_PVS31_BRS_MC.emat"
     }
    }
+   MeshParams {
+    MeshParam MT_BRS {
+    }
+   }
    Common TXOCommonClass "{D097A04CF9C40964}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "5.2.2 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{9D130B4443F22DD7}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -31,6 +39,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{52F61C40F7C551C3}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }

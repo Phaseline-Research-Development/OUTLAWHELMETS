@@ -8,7 +8,28 @@ GenericEntity {
   }
   OUTLAW_FirstPersonHideComponent "{70174436867480A9}" {
   }
+  ClothNodeStorageComponent "{0DADACF591BD4A67}" {
+   Attributes SCR_ItemAttributeCollection "{D2A74B8CEA7F426B}" {
+    ItemDisplayName UIInfo "{714CABE6F324459A}" {
+     Name "PR&D - BNVD Battery Pack"
+     Description "Helmet Attachment"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{5BACAA66F9EB44AF}" {
+     SizeSetupStrategy Manual
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{5E78D461761440B7}" {
+      CameraOrbitAngles -25 30 0
+      CameraDistanceToItem 1
+      FOV 10
+     }
+    }
+   }
+   StoragePurpose 0x40 0
+  }
   InventoryItemComponent "{9ABB5A74F480242F}" {
+   Enabled 0
    Attributes SCR_ItemAttributeCollection "{7FD2D78B6E717B4F}" {
     ItemDisplayName UIInfo "{7B607E4039019A89}" {
      Name "PR&D - BNVD Battery Pack"
@@ -55,6 +76,16 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{535B23056593EA79}" {
+   Slots {
+    LoadoutSlotInfo ZAP_Battery {
+     Prefab "{C65F37E0B4F944C5}Prefabs/GMS/ZAP/Fits/Battery_BNVD/ZAP_Dynamic.et"
+     PivotID "Head"
+     Offset 0.0000052000 0.1067718267 0.1429330707
+     Angles 90 0 180
+     AreaType GMS_Zap_BNVD_Battery {}
+    }
+   }
+
    AreaType OUTLAW_Helmet_Battery "{D25432A074113D23}" {
    }
    WornModel "{A9601CD467097E4A}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery.xob"
@@ -93,3 +124,5 @@ GenericEntity {
   }
  }
 }
+
+

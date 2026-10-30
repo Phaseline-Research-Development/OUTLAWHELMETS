@@ -100,6 +100,28 @@ GameEntity {
    AreaType LoadoutHeadCoverArea "{E4ABFAC763408A46}" {
    }
    Slots {
+    LoadoutSlotInfo ZAP_Left {
+     Prefab "{A4994FA19408412D}Prefabs/GMS/ZAP/Fits/Maritime_left/ZAP_Dynamic.et"
+     PivotID "Head"
+     Offset 0.0769282728433609 0.1686166226863861 -0.00739654153585434
+     Angles 64.158592224 -90.000007629 0.000032316
+     AreaType GMS_Zap_Maritime_Left {}
+    }
+    LoadoutSlotInfo ZAP_Right {
+     Prefab "{6CAB03C607954904}Prefabs/GMS/ZAP/Fits/Maritime_right/ZAP_Dynamic.et"
+     PivotID "Head"
+     Offset -0.0773506686091423 0.16862735152244568 -0.007399841211736202
+     Angles 64.157569885 90.000030518 -0.000032314
+     AreaType GMS_Zap_Maritime_Right {}
+    }
+    LoadoutSlotInfo ZAP_Back {
+     Prefab "{362C5AC2543146E9}Prefabs/GMS/ZAP/Fits/Maritime_back/ZAP_Dynamic.et"
+     PivotID "Head"
+     Offset -2.6599987904774025e-05 0.07341659814119339 0.12464317679405212
+     Angles 84.267623901 179.994537354 -0.005462970
+     AreaType GMS_Zap_Maritime_Back {}
+    }
+
     LoadoutSlotInfo Shell {
      Prefab "{127B35B37B9F9EF3}Prefabs/Helmets/Maritime/Shells/Maritime_Shell_MCB.et"
      InheritParentSkeleton 1

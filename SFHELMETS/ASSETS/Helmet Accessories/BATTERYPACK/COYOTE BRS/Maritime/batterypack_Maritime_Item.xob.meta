@@ -2,6 +2,7 @@ MetaFileClass {
  Name "{8FC63B5D270384FF}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/Maritime/batterypack_Maritime_Item.xob"
  Configurations {
   FBXResourceClass PC {
+   ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{D6F7A9EC4F0D2E2D}" {
      SourceMaterial "MI_PVS31_BRS_MC"
@@ -14,7 +15,6 @@ MetaFileClass {
    }
    GeometryParams {
     GeometryParam UCX_Item {
-     LayerPreset "ItemFireView"
      SurfaceProperties {
       "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
      }
@@ -26,7 +26,7 @@ MetaFileClass {
    }
    ApplicationVendor "Blender Foundation"
    ApplicationName "Blender (stable FBX IO)"
-   ApplicationVersion "4.5.10 LTS"
+   ApplicationVersion "5.2.2 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{2EEF59937A4C8ADD}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {

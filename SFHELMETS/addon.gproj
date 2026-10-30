@@ -3,6 +3,7 @@ GameProject {
  GUID "697C1B4763225DB8"
  TITLE "Phaseline - Helmets"
  Dependencies {
+  "A78F2D349C6E510B"
   "6F417A32E17A2178"
   "58D0FB3206B6F859"
  }

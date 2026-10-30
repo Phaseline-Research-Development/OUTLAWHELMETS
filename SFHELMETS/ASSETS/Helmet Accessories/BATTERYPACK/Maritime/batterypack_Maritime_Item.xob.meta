@@ -2,15 +2,19 @@ MetaFileClass {
  Name "{E106EAA9C8B3FC0C}ASSETS/Helmet Accessories/BATTERYPACK/Maritime/batterypack_Maritime_Item.xob"
  Configurations {
   FBXResourceClass PC {
+   ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{9272B5013684E07D}" {
      SourceMaterial "MI_PVS31_BRS_MC"
      AssignedMaterial "{2AF20FDC911F7C48}ASSETS/Helmet Accessories/BATTERYPACK/Data/MI_PVS31_BRS_MC.emat"
     }
    }
+   MeshParams {
+    MeshParam "MT_BRS.001" {
+    }
+   }
    GeometryParams {
     GeometryParam UCX_Item {
-     LayerPreset "ItemFireView"
      SurfaceProperties {
       "{5EAA7FB0A83F90CF}Common/Materials/Game/plastic.gamemat"
      }
@@ -20,6 +24,9 @@ MetaFileClass {
    }
    Common TXOCommonClass "{CAD48895B218FA0C}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "5.2.2 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{2EEC82A1C2872AA3}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -40,6 +47,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{BEAB727C3E4384B5}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }
