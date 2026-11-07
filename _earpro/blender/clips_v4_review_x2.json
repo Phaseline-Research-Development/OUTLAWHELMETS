@@ -1,0 +1,221 @@
+{
+ "out_dir": "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/_earpro/build/anim_review_v4_x2",
+ "rig_report": "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/_earpro/blender/data/amp_rig_report.json",
+ "palm_gap": 0.003,
+ "profiles": {
+  "PLHM_LArmABS": [
+   "L"
+  ],
+  "PLHM_RArmABS": [
+   "R"
+  ],
+  "PLHM_ArmsABS": [
+   "L",
+   "R"
+  ]
+ },
+ "base_pose_enf": {
+  "Neck1": {
+   "t": [
+    -3e-07,
+    0.290318,
+    -3e-07
+   ],
+   "x": [
+    -0.998494,
+    -0.0214729,
+    -0.0504889
+   ],
+   "y": [
+    -0.0387217,
+    0.927741,
+    0.37121
+   ],
+   "z": [
+    0.0388697,
+    0.372606,
+    -0.927175
+   ]
+  },
+  "Neck2": {
+   "t": [
+    -2e-07,
+    0.0499388,
+    -2e-07
+   ],
+   "x": [
+    0.998808,
+    -0.037415,
+    0.031353
+   ],
+   "y": [
+    0.0373982,
+    0.9993,
+    0.00112176
+   ],
+   "z": [
+    -0.031373,
+    5.21233e-05,
+    0.999508
+   ]
+  },
+  "Neck3": {
+   "t": [
+    -3e-07,
+    0.0479005,
+    -3e-07
+   ],
+   "x": [
+    0.998841,
+    -0.0323234,
+    0.0356669
+   ],
+   "y": [
+    0.030672,
+    0.998474,
+    0.0459158
+   ],
+   "z": [
+    -0.0370966,
+    -0.0447686,
+    0.998308
+   ]
+  },
+  "Head": {
+   "t": [
+    0.0,
+    0.0402323,
+    9.3929e-05
+   ],
+   "x": [
+    0.978999,
+    -0.0699019,
+    0.191507
+   ],
+   "y": [
+    0.0135658,
+    0.959633,
+    0.280926
+   ],
+   "z": [
+    -0.203414,
+    -0.272429,
+    0.940428
+   ]
+  }
+ },
+ "grip_open": 0.15,
+ "clips": {
+  "plhm_amp_lower_RbyL": {
+   "sides": [
+    "R"
+   ],
+   "duration": 2.8,
+   "phases": {
+    "reach_end": 0.85,
+    "release_start": 2.2,
+    "release_end": 2.33,
+    "return_end": 2.8
+   },
+   "grip": {
+    "out": 0.121,
+    "fwd": -0.025,
+    "z": 1.642
+   },
+   "cup_keys": {
+    "R": {
+     "splay": [
+      [
+       0.85,
+       24
+      ],
+      [
+       1.19,
+       44
+      ],
+      [
+       1.81,
+       44
+      ],
+      [
+       2.1,
+       0
+      ]
+     ],
+     "swing": [
+      [
+       1.03,
+       161.5
+      ],
+      [
+       1.9,
+       0
+      ]
+     ],
+     "yaw": [
+      [
+       0.85,
+       46.5
+      ],
+      [
+       1.29,
+       0
+      ]
+     ],
+     "spin": [
+      [
+       0.85,
+       -4.5
+      ],
+      [
+       1.29,
+       0
+      ]
+     ]
+    }
+   },
+   "hands": {
+    "R": "L"
+   },
+   "grip_by_side": {
+    "R": {
+     "out": 0.121,
+     "fwd": -0.02,
+     "z": 1.655
+    }
+   }
+  }
+ },
+ "review": {
+  "clips": [
+   "plhm_amp_lower_RbyL"
+  ],
+  "times": [
+   0.5,
+   0.85,
+   1.3,
+   1.9,
+   2.25
+  ],
+  "views": [
+   "front",
+   "right",
+   "back34R"
+  ],
+  "res": [
+   480,
+   480
+  ],
+  "earpro": "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/SFHELMETS/ASSETS/Helmet Accessories/AMP/OpsCore_AMP.fbx",
+  "helmet": [
+   "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/SFHELMETS/ASSETS/HELMET BLACK/SF V2 Core.fbx",
+   "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/SFHELMETS/ASSETS/HELMET BLACK/SF V2 Ballistic Shell.fbx",
+   "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/SFHELMETS/ASSETS/HELMET BLACK/SF V2 Rails.fbx"
+  ]
+ },
+ "cross_apex": [
+  -0.01,
+  -0.03,
+  1.89
+ ]
+}

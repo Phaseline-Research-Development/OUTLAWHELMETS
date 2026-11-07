@@ -54,6 +54,9 @@ GenericEntity {
     }
    }
   }
+  PLHM_EarProComponent "{80A9A396F76153ED}" {
+   m_iClipSet 1
+  }
   BaseLoadoutClothComponent "{F11C7C1B2AE8F9EC}" {
    AreaType OUTLAW_Helmet_XPEarPro "{38FC0231A45CE934}" {
    }

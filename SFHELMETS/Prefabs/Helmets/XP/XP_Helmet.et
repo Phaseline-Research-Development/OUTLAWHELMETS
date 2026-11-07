@@ -150,7 +150,7 @@ GameEntity {
      }
     }
     LoadoutSlotInfo Earpro {
-     InheritParentSkeleton 1
+     PivotID "Head"
      AreaType OUTLAW_Helmet_XPEarPro "{FB44D2BF4D55D57D}" {
      }
     }

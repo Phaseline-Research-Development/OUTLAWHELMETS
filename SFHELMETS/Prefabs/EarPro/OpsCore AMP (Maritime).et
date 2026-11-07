@@ -54,6 +54,9 @@ GenericEntity {
     }
    }
   }
+  PLHM_EarProComponent "{13DC14DD01600B32}" {
+   m_iClipSet 0
+  }
   BaseLoadoutClothComponent "{ACBDBBF874CC3C4C}" {
    AreaType OUTLAW_Helmet_MaritimeEarPro "{293A86FB74379644}" {
    }

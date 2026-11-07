@@ -1,0 +1,221 @@
+AnimSetInstanceSource {
+ Template "{98906314B67BFA60}anims/EarPro/workspaces/PLHM_EarPro.ast"
+ Lines {
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpLowerB" {
+   Resource "{7E9AFA04FBBF9C69}anims/EarPro/txa/plhm_ampxp_lower_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpLowerL" {
+   Resource "{71150EA636B2E9EF}anims/EarPro/txa/plhm_ampxp_lower_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpLowerR" {
+   Resource "{801E36F245EDDC03}anims/EarPro/txa/plhm_ampxp_lower_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpRaiseB" {
+   Resource "{D04870516D887E45}anims/EarPro/txa/plhm_ampxp_raise_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpRaiseL" {
+   Resource "{DFC784F3A0850BC3}anims/EarPro/txa/plhm_ampxp_raise_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpRaiseR" {
+   Resource "{2ECCBCA7D3DA3E2F}anims/EarPro/txa/plhm_ampxp_raise_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpUnventB" {
+   Resource "{4A7B1CE1A848E45E}anims/EarPro/txa/plhm_ampxp_unvent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpUnventL" {
+   Resource "{45F4E843654591D8}anims/EarPro/txa/plhm_ampxp_unvent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpUnventR" {
+   Resource "{B4FFD017161AA434}anims/EarPro/txa/plhm_ampxp_unvent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpVentB" {
+   Resource "{1E1BEBFFA6BC9B8B}anims/EarPro/txa/plhm_ampxp_vent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpVentL" {
+   Resource "{11941F5D6BB1EE0D}anims/EarPro/txa/plhm_ampxp_vent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.AmpXpVentR" {
+   Resource "{E09F270918EEDBE1}anims/EarPro/txa/plhm_ampxp_vent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsLowerB" {
+   Resource "{527668F1D8A9B122}anims/EarPro/txa/plhm_ctns_lower_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsLowerL" {
+   Resource "{5DF99C5315A4C4A4}anims/EarPro/txa/plhm_ctns_lower_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsLowerR" {
+   Resource "{ACF2A40766FBF148}anims/EarPro/txa/plhm_ctns_lower_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsRaiseB" {
+   Resource "{FCA4E2A44E9E530E}anims/EarPro/txa/plhm_ctns_raise_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsRaiseL" {
+   Resource "{F32B160683932688}anims/EarPro/txa/plhm_ctns_raise_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsRaiseR" {
+   Resource "{02202E52F0CC1364}anims/EarPro/txa/plhm_ctns_raise_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsUnventB" {
+   Resource "{B1C6B2F28D6191E1}anims/EarPro/txa/plhm_ctns_unvent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsUnventL" {
+   Resource "{BE494650406CE467}anims/EarPro/txa/plhm_ctns_unvent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsUnventR" {
+   Resource "{4F427E043333D18B}anims/EarPro/txa/plhm_ctns_unvent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsVentB" {
+   Resource "{E4A6380CDBF6A0C9}anims/EarPro/txa/plhm_ctns_vent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsVentL" {
+   Resource "{EB29CCAE16FBD54F}anims/EarPro/txa/plhm_ctns_vent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsVentR" {
+   Resource "{1A22F4FA65A4E0A3}anims/EarPro/txa/plhm_ctns_vent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpLowerB" {
+   Resource "{90F16816540B0AB2}anims/EarPro/txa/plhm_ctnsxp_lower_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpLowerL" {
+   Resource "{9F7E9CB499067F34}anims/EarPro/txa/plhm_ctnsxp_lower_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpLowerR" {
+   Resource "{6E75A4E0EA594AD8}anims/EarPro/txa/plhm_ctnsxp_lower_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpRaiseB" {
+   Resource "{3E23E243C23CE89E}anims/EarPro/txa/plhm_ctnsxp_raise_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpRaiseL" {
+   Resource "{31AC16E10F319D18}anims/EarPro/txa/plhm_ctnsxp_raise_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpRaiseR" {
+   Resource "{C0A72EB57C6EA8F4}anims/EarPro/txa/plhm_ctnsxp_raise_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpUnventB" {
+   Resource "{9FD8717CEB503925}anims/EarPro/txa/plhm_ctnsxp_unvent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpUnventL" {
+   Resource "{905785DE265D4CA3}anims/EarPro/txa/plhm_ctnsxp_unvent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpUnventR" {
+   Resource "{615CBD8A5502794F}anims/EarPro/txa/plhm_ctnsxp_unvent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpVentB" {
+   Resource "{88A9955519A36A6D}anims/EarPro/txa/plhm_ctnsxp_vent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpVentL" {
+   Resource "{872661F7D4AE1FEB}anims/EarPro/txa/plhm_ctnsxp_vent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtNsXpVentR" {
+   Resource "{762D59A3A7F12A07}anims/EarPro/txa/plhm_ctnsxp_vent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViLowerB" {
+   Resource "{B708E190710C730B}anims/EarPro/txa/plhm_ctvi_lower_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViLowerL" {
+   Resource "{B8871532BC01068D}anims/EarPro/txa/plhm_ctvi_lower_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViLowerR" {
+   Resource "{498C2D66CF5E3361}anims/EarPro/txa/plhm_ctvi_lower_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViRaiseB" {
+   Resource "{19DA6BC5E73B9127}anims/EarPro/txa/plhm_ctvi_raise_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViRaiseL" {
+   Resource "{16559F672A36E4A1}anims/EarPro/txa/plhm_ctvi_raise_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViRaiseR" {
+   Resource "{E75EA7335969D14D}anims/EarPro/txa/plhm_ctvi_raise_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViUnventB" {
+   Resource "{240942DF39963C91}anims/EarPro/txa/plhm_ctvi_unvent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViUnventL" {
+   Resource "{2B86B67DF49B4917}anims/EarPro/txa/plhm_ctvi_unvent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViUnventR" {
+   Resource "{DA8D8E2987C47CFB}anims/EarPro/txa/plhm_ctvi_unvent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViVentB" {
+   Resource "{7F86F6F633546D78}anims/EarPro/txa/plhm_ctvi_vent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViVentL" {
+   Resource "{70090254FE5918FE}anims/EarPro/txa/plhm_ctvi_vent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViVentR" {
+   Resource "{81023A008D062D12}anims/EarPro/txa/plhm_ctvi_vent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpLowerB" {
+   Resource "{C4055F33E9DD51DC}anims/EarPro/txa/plhm_ctvixp_lower_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpLowerL" {
+   Resource "{CB8AAB9124D0245A}anims/EarPro/txa/plhm_ctvixp_lower_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpLowerR" {
+   Resource "{3A8193C5578F11B6}anims/EarPro/txa/plhm_ctvixp_lower_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpRaiseB" {
+   Resource "{6AD7D5667FEAB3F0}anims/EarPro/txa/plhm_ctvixp_raise_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpRaiseL" {
+   Resource "{655821C4B2E7C676}anims/EarPro/txa/plhm_ctvixp_raise_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpRaiseR" {
+   Resource "{94531990C1B8F39A}anims/EarPro/txa/plhm_ctvixp_raise_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpUnventB" {
+   Resource "{9EE4486E49C41F3A}anims/EarPro/txa/plhm_ctvixp_unvent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpUnventL" {
+   Resource "{916BBCCC84C96ABC}anims/EarPro/txa/plhm_ctvixp_unvent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpUnventR" {
+   Resource "{60608498F7965F50}anims/EarPro/txa/plhm_ctvixp_unvent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpVentB" {
+   Resource "{1D666578AD54C71D}anims/EarPro/txa/plhm_ctvixp_vent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpVentL" {
+   Resource "{12E991DA6059B29B}anims/EarPro/txa/plhm_ctvixp_vent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.CtViXpVentR" {
+   Resource "{E3E2A98E13068777}anims/EarPro/txa/plhm_ctvixp_vent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.LowerB" {
+   Resource "{01ECAA80D21223CD}anims/EarPro/txa/plhm_amp_lower_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.LowerL" {
+   Resource "{0E635E221F1F564B}anims/EarPro/txa/plhm_amp_lower_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.LowerR" {
+   Resource "{FF6866766C4063A7}anims/EarPro/txa/plhm_amp_lower_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.RaiseB" {
+   Resource "{AF3E20D54425C1E1}anims/EarPro/txa/plhm_amp_raise_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.RaiseL" {
+   Resource "{A0B1D4778928B467}anims/EarPro/txa/plhm_amp_raise_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.RaiseR" {
+   Resource "{51BAEC23FA77818B}anims/EarPro/txa/plhm_amp_raise_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.UnventB" {
+   Resource "{502D9B2EB6408194}anims/EarPro/txa/plhm_amp_unvent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.UnventL" {
+   Resource "{5FA26F8C7B4DF412}anims/EarPro/txa/plhm_amp_unvent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.UnventR" {
+   Resource "{AEA957D80812C1FE}anims/EarPro/txa/plhm_amp_unvent_R.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.VentB" {
+   Resource "{F4939FB6556CFADE}anims/EarPro/txa/plhm_amp_vent_B.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.VentL" {
+   Resource "{FB1C6B1498618F58}anims/EarPro/txa/plhm_amp_vent_L.anm"
+  }
+  AnimSetInstanceSource_Line "EarPro.Default.VentR" {
+   Resource "{0A175340EB3EBAB4}anims/EarPro/txa/plhm_amp_vent_R.anm"
+  }
+ }
+}

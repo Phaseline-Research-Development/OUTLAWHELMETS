@@ -3,14 +3,22 @@ MetaFileClass {
  Configurations {
   FBXResourceClass PC {
    ExportSkinning 1
+   ExportSceneHierarchy 1
    MaterialAssigns {
     MaterialAssignClass "{C462A4BFA01EA124}" {
      SourceMaterial "MI_Ops_Core_AMP_Headset"
      AssignedMaterial "{6182325645162C53}ASSETS/Helmet Accessories/AMP/Data/MI_Ops_Core_AMP_Headset.emat"
     }
    }
+   MeshParams {
+    MeshParam OpsCore_AMP_Maritime {
+    }
+   }
    Common TXOCommonClass "{04699A74A8DFE8BB}" : "{0877E7C4BB2B2C9A}Configs/System/ResourceTypes/PC/MeshObjectCommon.conf" {
    }
+   ApplicationVendor "Blender Foundation"
+   ApplicationName "Blender (stable FBX IO)"
+   ApplicationVersion "5.2.3 LTS"
   }
   FBXResourceClass XBOX_ONE : PC {
    Common TXOCommonClass "{186FB1D6961C8485}" : "{9D5B6207F7628CE2}Configs/System/ResourceTypes/XBOX_ONE/MeshObjectCommon.conf" {
@@ -31,6 +39,8 @@ MetaFileClass {
   FBXResourceClass HEADLESS : PC {
    Common TXOCommonClass "{E5CB157B0915A36D}" : "{3A5B3356978039E8}Configs/System/ResourceTypes/HEADLESS/MeshObjectCommon.conf" {
    }
+  }
+  FBXResourceClass Xbox : PC {
   }
  }
 }

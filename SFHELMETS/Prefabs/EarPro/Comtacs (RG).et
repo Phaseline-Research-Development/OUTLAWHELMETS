@@ -54,6 +54,13 @@ GenericEntity {
     }
    }
   }
+  PLHM_EarProComponent "{2BD8B2BD2325354A}" {
+   m_vHingeAxis 0 1 0
+   m_vVentPose 16 0 0
+   m_vStowPose 18 -90 0
+   m_fStowYaw 0
+   m_iClipSet 2
+  }
   BaseLoadoutClothComponent "{6A2F7249A2D5B6E9}" {
    AreaType OUTLAW_Helmet_EarPro "{19A71673D54D52EC}" {
    }

@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{AEA957D80812C1FE}anims/EarPro/txa/plhm_amp_unvent_R.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceProfile "PLHM_RArmABS"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+  TXAResourceClass Xbox : PC {
+  }
+ }
+}

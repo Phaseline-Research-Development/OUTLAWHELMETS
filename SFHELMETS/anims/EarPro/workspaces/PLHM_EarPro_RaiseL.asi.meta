@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{B7ECBCCEC8F8E072}anims/EarPro/workspaces/PLHM_EarPro_RaiseL.asi"
+ Configurations {
+  AnimSetInstanceResourceClass PC {
+  }
+  AnimSetInstanceResourceClass XBOX_ONE : PC {
+  }
+  AnimSetInstanceResourceClass XBOX_SERIES : PC {
+  }
+  AnimSetInstanceResourceClass PS4 : PC {
+  }
+  AnimSetInstanceResourceClass PS5 : PC {
+  }
+  AnimSetInstanceResourceClass HEADLESS : PC {
+  }
+  AnimSetInstanceResourceClass Xbox : PC {
+  }
+ }
+}

@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{98906314B67BFA60}anims/EarPro/workspaces/PLHM_EarPro.ast"
+ Configurations {
+  AnimSetTemplateResourceClass PC {
+  }
+  AnimSetTemplateResourceClass XBOX_ONE : PC {
+  }
+  AnimSetTemplateResourceClass XBOX_SERIES : PC {
+  }
+  AnimSetTemplateResourceClass PS4 : PC {
+  }
+  AnimSetTemplateResourceClass PS5 : PC {
+  }
+  AnimSetTemplateResourceClass HEADLESS : PC {
+  }
+  AnimSetTemplateResourceClass Xbox : PC {
+  }
+ }
+}

@@ -1,0 +1,21 @@
+AnimSrcGraph {
+ AnimSetTemplate "{98906314B67BFA60}anims/EarPro/workspaces/PLHM_EarPro.ast"
+ ControlTemplate AnimSrcGCT "{7EE51E232ACD66F4}" {
+  Variables {
+   AnimSrcGCTVarInt Stance {
+    MaxValue 2
+   }
+   AnimSrcGCTVarBool Low {
+   }
+   AnimSrcGCTVarInt WeaponType {
+    MaxValue 20
+   }
+  }
+ }
+ Debug AnimSrcGD "{80756CF0B4A965E5}" {
+ }
+ GraphFilesResourceNames {
+  "{A56C1BAE1F1D47A3}anims/EarPro/workspaces/PLHM_EarPro.agf"
+ }
+ DefaultRunNode "MC_RaiseL"
+}

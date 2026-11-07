@@ -1,0 +1,15 @@
+GenericEntity : "{FF1A872BD2B7EBE7}Prefabs/EarPro/OpsCore AMP.et" {
+ ID "8FD2515B7D4889C6"
+ components {
+  MeshObject "{6FC4B301BC15E194}" {
+   InheritSkeleton 0
+  }
+  PLHM_EarProComponent "{3C9D5E7A1B2F4068}" {
+  }
+  BaseLoadoutClothComponent "{AEECD51A9B2C07AC}" {
+   AreaType PLHM_TestEarProPivot "{65A718B5E23D36EE}" {
+   }
+   WornModel "{895246DE10C64BDE}ASSETS/Helmet Accessories/AMP/OpsCore_AMP.xob"
+  }
+ }
+}

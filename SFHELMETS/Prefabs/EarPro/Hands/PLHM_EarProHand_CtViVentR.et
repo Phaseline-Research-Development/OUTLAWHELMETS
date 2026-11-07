@@ -1,0 +1,16 @@
+GenericEntity : "{76F4C8F4B05F7003}Prefabs/EarPro/Hands/PLHM_EarProHand_RaiseL.et" {
+ ID "5E1C7A3B9D2050EA"
+ components {
+  InventoryItemComponent "{B8A863F664B9C48D}" {
+   Attributes SCR_ItemAttributeCollection "{429BB8DA8FD6E9D4}" {
+    ItemAnimationAttributes ItemAnimationAttributes "{1977151CB44A0F26}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{CED57F735D98A848}" {
+       StartNode "MC_CtViVentR"
+      }
+     }
+    }
+   }
+  }
+ }
+}
