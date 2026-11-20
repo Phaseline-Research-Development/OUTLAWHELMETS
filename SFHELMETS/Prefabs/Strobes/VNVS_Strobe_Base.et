@@ -1,9 +1,0 @@
-GenericEntity : "{E3FF2D4B510769C1}Prefabs/Characters/Core/Eyewear_base.et" {
- ID "FC3B5736B7FA1590"
- components {
-  BaseLoadoutClothComponent "{559C7E9ADCAE6DFF}" {
-   AreaType OUTLAW_Helmet_Strobe "{7679563EF2796C3E}" {
-   }
-  }
- }
-}

@@ -76,16 +76,6 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{189FF09A2D32D4D3}" {
-   Slots {
-    LoadoutSlotInfo ZAP_Battery {
-     Prefab "{B824EEA6BF604E41}Prefabs/GMS/ZAP/Fits/Battery_PVS31_BRS/ZAP_Dynamic.et"
-     PivotID "Head"
-     Offset 0.0023140991 0.0822963417 0.1645228863
-     Angles 89.8748855591 0.1370921135 -179.8632202148
-     AreaType GMS_Zap_BRS_Battery {}
-    }
-   }
-
    AreaType OUTLAW_Helmet_XPBRS "{A47AC54CDCF5AE13}" {
    }
    WornModel "{E903024203D6B54E}ASSETS/Helmet Accessories/BATTERYPACK/COYOTE BRS/XP/batterypack_XP.xob"

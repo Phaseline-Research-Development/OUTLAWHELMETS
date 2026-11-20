@@ -76,16 +76,6 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{7FB1A377993E1AFE}" {
-   Slots {
-    LoadoutSlotInfo ZAP_Battery {
-     Prefab "{B824EEA6BF604E41}Prefabs/GMS/ZAP/Fits/Battery_PVS31_BRS/ZAP_Dynamic.et"
-     PivotID "Head"
-     Offset 0.0023140991 0.0822963417 0.1645228863
-     Angles 89.8748855591 0.1370921135 -179.8632202148
-     AreaType GMS_Zap_BRS_Battery {}
-    }
-   }
-
    AreaType OUTLAW_Helmet_MaritimeBRS "{B83244280AE15D4A}" {
    }
    WornModel "{17FA44457744ABA3}ASSETS/Helmet Accessories/BATTERYPACK/Maritime/batterypack_Maritime.xob"

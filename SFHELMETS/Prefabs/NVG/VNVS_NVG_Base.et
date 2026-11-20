@@ -1,9 +1,0 @@
-GenericEntity : "{2256D0499D4F5E45}Prefabs/GMS/ZDT/NODs/WilcoxMount.et" {
- ID "CF2F6A043B09D89C"
- components {
-  BaseLoadoutClothComponent "{559C7E9ADCAE6DFF}" {
-   AreaType OUTLAW_Helmet_NVG "{096F09E4684E9FC6}" {
-   }
-  }
- }
-}

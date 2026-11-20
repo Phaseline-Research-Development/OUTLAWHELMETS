@@ -76,16 +76,6 @@ GenericEntity {
    }
   }
   BaseLoadoutClothComponent "{7F874225DADA1B05}" {
-   Slots {
-    LoadoutSlotInfo ZAP_Battery {
-     Prefab "{C65F37E0B4F944C5}Prefabs/GMS/ZAP/Fits/Battery_BNVD/ZAP_Dynamic.et"
-     PivotID "Head"
-     Offset 0.0000052000 0.1067718267 0.1429330707
-     Angles 90 0 180
-     AreaType GMS_Zap_BNVD_Battery {}
-    }
-   }
-
    AreaType OUTLAW_Helmet_MaritimeBattery "{ED9485920528A434}" {
    }
    WornModel "{A9601CD467097E4A}ASSETS/Helmet Accessories/BNVD BATTERY/bnvdbattery.xob"
