@@ -1,0 +1,19 @@
+MetaFileClass {
+ Name "{8A62051481BE2E93}anims/EarPro/workspaces/PLHM_EarPro.agr"
+ Configurations {
+  AnimGraphResourceClass PC {
+  }
+  AnimGraphResourceClass XBOX_ONE : PC {
+  }
+  AnimGraphResourceClass XBOX_SERIES : PC {
+  }
+  AnimGraphResourceClass PS4 : PC {
+  }
+  AnimGraphResourceClass PS5 : PC {
+  }
+  AnimGraphResourceClass HEADLESS : PC {
+  }
+  AnimGraphResourceClass Xbox : PC {
+  }
+ }
+}

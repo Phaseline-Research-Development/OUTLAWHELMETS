@@ -1,0 +1,118 @@
+GenericEntity : "{2B1D0128ED660BE9}Prefabs/Props/Crates/BoxWooden_01.et" {
+ ID "6D2E8F1A3B4C5D70"
+ components {
+  ActionsManagerComponent "{4E7A9C1D2B3F5061}" {
+   ActionContexts {
+    UserActionContext "{5F8B0D2E3C4A6172}" {
+     ContextName "default"
+     Position PointInfo "{60A1C3E5F7092B4D}" {
+      Offset 0 0.4 0
+     }
+     Radius 1.2
+    }
+   }
+   additionalActions {
+    PLHM_DemoEarProAction "{40B2D002CC92D33D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{32833106536E95DF}" {
+      Name "Ear pro: stow / deploy BOTH cups (me)"
+     }
+     m_iRequest 8
+     m_iMask 3
+    }
+    PLHM_DemoEarProAction "{3170FAB23D90FBAC}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{F08DB22FD293056A}" {
+      Name "Ear pro: stow / deploy LEFT cup (me)"
+     }
+     m_iRequest 8
+     m_iMask 1
+    }
+    PLHM_DemoEarProAction "{4AD5CFBC1D74BD1C}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{F3FAA8E879EAA723}" {
+      Name "Ear pro: stow / deploy RIGHT cup (me)"
+     }
+     m_iRequest 8
+     m_iMask 2
+    }
+    PLHM_DemoEarProAction "{FFEC3FEE8ED2305D}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{3CE1268C9C8052E3}" {
+      Name "Ear pro: vent / close BOTH cups (me)"
+     }
+     m_iRequest 9
+     m_iMask 3
+    }
+    PLHM_DemoKitAction "{8E4EDC90253D9E30}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{A93F32A9A1725102}" {
+      Name "Kit: SF helmet + Ops-Core AMP"
+     }
+     m_rHelmet "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et"
+     m_rEarPro "{FF1A872BD2B7EBE7}Prefabs/EarPro/OpsCore AMP.et"
+    }
+    PLHM_DemoKitAction "{009F001680289E32}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{47AA2DBAD9E2EC8D}" {
+      Name "Kit: Maritime helmet + AMP (Black)"
+     }
+     m_rHelmet "{8CACB79B18F0B611}Prefabs/Helmets/Maritime/Maritime_Helmet.et"
+     m_rEarPro "{746908C976D7F138}Prefabs/EarPro/OpsCore AMP (Black) (Maritime).et"
+    }
+    PLHM_DemoKitAction "{D5DE6E91074206E2}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{7F453A0EF5097B4F}" {
+      Name "Kit: XP helmet + AMP (RG)"
+     }
+     m_rHelmet "{930546500F935E9B}Prefabs/Helmets/XP/XP_Helmet.et"
+     m_rEarPro "{F9E45EB7365C9129}Prefabs/EarPro/OpsCore AMP (RG) (XP).et"
+    }
+    PLHM_DemoKitAction "{CADD40E92C34BF1C}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{30F47F35D0380CFB}" {
+      Name "Kit: SF helmet + ComTac VI"
+     }
+     m_rHelmet "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et"
+     m_rEarPro "{84312A6ACEF2297C}Prefabs/EarPro/Comtac VI.et"
+    }
+    PLHM_DemoKitAction "{FF6AF8AF81DF6383}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{63783933D5F00510}" {
+      Name "Kit: Maritime helmet + ComTacs (Green)"
+     }
+     m_rHelmet "{8CACB79B18F0B611}Prefabs/Helmets/Maritime/Maritime_Helmet.et"
+     m_rEarPro "{466B33405EFDAB08}Prefabs/EarPro/Comtacs (Green) (Maritime).et"
+    }
+    PLHM_DemoKitAction "{54DC77A72ED0D50A}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{1E07EA63524CA98F}" {
+      Name "Kit: XP helmet + ComTacs (Tan)"
+     }
+     m_rHelmet "{930546500F935E9B}Prefabs/Helmets/XP/XP_Helmet.et"
+     m_rEarPro "{E58BFD77DC660376}Prefabs/EarPro/Comtacs (Tan) (XP).et"
+    }
+   }
+  }
+ }
+}

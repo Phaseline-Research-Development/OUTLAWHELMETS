@@ -1,0 +1,14 @@
+GameEntity : "{AF457DB4423C4107}Prefabs/Helmets/SF V2 Helmets/SF_Helmet_AOR1 (base dont touch).et" {
+ ID "75314BD2F02CB2AA"
+ components {
+  BaseLoadoutClothComponent "{6A2F5CA91793174C}" {
+   Slots {
+    LoadoutSlotInfo EarproPivot {
+     PivotID "Head"
+     AreaType PLHM_TestEarProPivot "{5185C5C492F05C50}" {
+     }
+    }
+   }
+  }
+ }
+}

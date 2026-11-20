@@ -1,0 +1,4688 @@
+AnimSrcGraphFile {
+ Sheets {
+  AnimSrcGraphSheet Main {
+   Nodes {
+    AnimSrcNodeStateMachine MC_RaiseL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 0
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 2
+       Child "RaiseL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 2
+       Child "RaiseL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 2
+       Child "RaiseL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000000}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000001}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse RaiseL_BufStart {
+     EditorPos 0 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse RaiseL_BufAct {
+     EditorPos 2 5
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse RaiseL_BufDone {
+     EditorPos 6 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource RaiseL_Src {
+     EditorPos 4 5
+     Source "EarPro.Default.RaiseL"
+    }
+    AnimSrcNodeBlend RaiseL_ActB {
+     EditorPos 3 4
+     BlendWeight "1"
+     Child0 "RaiseL_BufAct"
+     Child1 "RaiseL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_LowerL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 0
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 2
+       Child "LowerL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 2
+       Child "LowerL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 2
+       Child "LowerL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000002}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000003}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse LowerL_BufStart {
+     EditorPos 10 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse LowerL_BufAct {
+     EditorPos 12 5
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse LowerL_BufDone {
+     EditorPos 16 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource LowerL_Src {
+     EditorPos 14 5
+     Source "EarPro.Default.LowerL"
+    }
+    AnimSrcNodeBlend LowerL_ActB {
+     EditorPos 13 4
+     BlendWeight "1"
+     Child0 "LowerL_BufAct"
+     Child1 "LowerL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_VentL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 0
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 2
+       Child "VentL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 2
+       Child "VentL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 2
+       Child "VentL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000004}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000005}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse VentL_BufStart {
+     EditorPos 20 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse VentL_BufAct {
+     EditorPos 22 5
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse VentL_BufDone {
+     EditorPos 26 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource VentL_Src {
+     EditorPos 24 5
+     Source "EarPro.Default.VentL"
+    }
+    AnimSrcNodeBlend VentL_ActB {
+     EditorPos 23 4
+     BlendWeight "1"
+     Child0 "VentL_BufAct"
+     Child1 "VentL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_UnventL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 0
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 2
+       Child "UnventL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 2
+       Child "UnventL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 2
+       Child "UnventL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000006}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000007}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse UnventL_BufStart {
+     EditorPos 30 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse UnventL_BufAct {
+     EditorPos 32 5
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse UnventL_BufDone {
+     EditorPos 36 4
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource UnventL_Src {
+     EditorPos 34 5
+     Source "EarPro.Default.UnventL"
+    }
+    AnimSrcNodeBlend UnventL_ActB {
+     EditorPos 33 4
+     BlendWeight "1"
+     Child0 "UnventL_BufAct"
+     Child1 "UnventL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_RaiseR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 8
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 10
+       Child "RaiseR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 10
+       Child "RaiseR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 10
+       Child "RaiseR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000008}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000009}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse RaiseR_BufStart {
+     EditorPos 0 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse RaiseR_BufAct {
+     EditorPos 2 13
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse RaiseR_BufDone {
+     EditorPos 6 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource RaiseR_Src {
+     EditorPos 4 13
+     Source "EarPro.Default.RaiseR"
+    }
+    AnimSrcNodeBlend RaiseR_ActB {
+     EditorPos 3 12
+     BlendWeight "1"
+     Child0 "RaiseR_BufAct"
+     Child1 "RaiseR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_LowerR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 8
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 10
+       Child "LowerR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 10
+       Child "LowerR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 10
+       Child "LowerR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000000A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000000B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse LowerR_BufStart {
+     EditorPos 10 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse LowerR_BufAct {
+     EditorPos 12 13
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse LowerR_BufDone {
+     EditorPos 16 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource LowerR_Src {
+     EditorPos 14 13
+     Source "EarPro.Default.LowerR"
+    }
+    AnimSrcNodeBlend LowerR_ActB {
+     EditorPos 13 12
+     BlendWeight "1"
+     Child0 "LowerR_BufAct"
+     Child1 "LowerR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_VentR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 8
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 10
+       Child "VentR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 10
+       Child "VentR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 10
+       Child "VentR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000000C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000000D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse VentR_BufStart {
+     EditorPos 20 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse VentR_BufAct {
+     EditorPos 22 13
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse VentR_BufDone {
+     EditorPos 26 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource VentR_Src {
+     EditorPos 24 13
+     Source "EarPro.Default.VentR"
+    }
+    AnimSrcNodeBlend VentR_ActB {
+     EditorPos 23 12
+     BlendWeight "1"
+     Child0 "VentR_BufAct"
+     Child1 "VentR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_UnventR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 8
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 10
+       Child "UnventR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 10
+       Child "UnventR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 10
+       Child "UnventR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000000E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000000F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse UnventR_BufStart {
+     EditorPos 30 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse UnventR_BufAct {
+     EditorPos 32 13
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse UnventR_BufDone {
+     EditorPos 36 12
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource UnventR_Src {
+     EditorPos 34 13
+     Source "EarPro.Default.UnventR"
+    }
+    AnimSrcNodeBlend UnventR_ActB {
+     EditorPos 33 12
+     BlendWeight "1"
+     Child0 "UnventR_BufAct"
+     Child1 "UnventR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_RaiseB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 16
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 18
+       Child "RaiseB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 18
+       Child "RaiseB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 18
+       Child "RaiseB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000010}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000011}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse RaiseB_BufStart {
+     EditorPos 0 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse RaiseB_BufAct {
+     EditorPos 2 21
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse RaiseB_BufDone {
+     EditorPos 6 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource RaiseB_Src {
+     EditorPos 4 21
+     Source "EarPro.Default.RaiseB"
+    }
+    AnimSrcNodeBlend RaiseB_ActB {
+     EditorPos 3 20
+     BlendWeight "1"
+     Child0 "RaiseB_BufAct"
+     Child1 "RaiseB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_LowerB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 16
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 18
+       Child "LowerB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 18
+       Child "LowerB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 18
+       Child "LowerB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000012}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000013}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse LowerB_BufStart {
+     EditorPos 10 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse LowerB_BufAct {
+     EditorPos 12 21
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse LowerB_BufDone {
+     EditorPos 16 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource LowerB_Src {
+     EditorPos 14 21
+     Source "EarPro.Default.LowerB"
+    }
+    AnimSrcNodeBlend LowerB_ActB {
+     EditorPos 13 20
+     BlendWeight "1"
+     Child0 "LowerB_BufAct"
+     Child1 "LowerB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_VentB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 16
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 18
+       Child "VentB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 18
+       Child "VentB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 18
+       Child "VentB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000014}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000015}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse VentB_BufStart {
+     EditorPos 20 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse VentB_BufAct {
+     EditorPos 22 21
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse VentB_BufDone {
+     EditorPos 26 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource VentB_Src {
+     EditorPos 24 21
+     Source "EarPro.Default.VentB"
+    }
+    AnimSrcNodeBlend VentB_ActB {
+     EditorPos 23 20
+     BlendWeight "1"
+     Child0 "VentB_BufAct"
+     Child1 "VentB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_UnventB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 16
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 18
+       Child "UnventB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 18
+       Child "UnventB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 18
+       Child "UnventB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000016}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000017}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse UnventB_BufStart {
+     EditorPos 30 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse UnventB_BufAct {
+     EditorPos 32 21
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse UnventB_BufDone {
+     EditorPos 36 20
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource UnventB_Src {
+     EditorPos 34 21
+     Source "EarPro.Default.UnventB"
+    }
+    AnimSrcNodeBlend UnventB_ActB {
+     EditorPos 33 20
+     BlendWeight "1"
+     Child0 "UnventB_BufAct"
+     Child1 "UnventB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpRaiseL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 24
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 26
+       Child "AmpXpRaiseL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 26
+       Child "AmpXpRaiseL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 26
+       Child "AmpXpRaiseL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000018}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000019}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseL_BufStart {
+     EditorPos 0 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseL_BufAct {
+     EditorPos 2 29
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseL_BufDone {
+     EditorPos 6 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpRaiseL_Src {
+     EditorPos 4 29
+     Source "EarPro.Default.AmpXpRaiseL"
+    }
+    AnimSrcNodeBlend AmpXpRaiseL_ActB {
+     EditorPos 3 28
+     BlendWeight "1"
+     Child0 "AmpXpRaiseL_BufAct"
+     Child1 "AmpXpRaiseL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpLowerL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 24
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 26
+       Child "AmpXpLowerL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 26
+       Child "AmpXpLowerL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 26
+       Child "AmpXpLowerL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000001A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000001B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpLowerL_BufStart {
+     EditorPos 10 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpLowerL_BufAct {
+     EditorPos 12 29
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpLowerL_BufDone {
+     EditorPos 16 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpLowerL_Src {
+     EditorPos 14 29
+     Source "EarPro.Default.AmpXpLowerL"
+    }
+    AnimSrcNodeBlend AmpXpLowerL_ActB {
+     EditorPos 13 28
+     BlendWeight "1"
+     Child0 "AmpXpLowerL_BufAct"
+     Child1 "AmpXpLowerL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpVentL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 24
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 26
+       Child "AmpXpVentL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 26
+       Child "AmpXpVentL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 26
+       Child "AmpXpVentL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000001C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000001D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpVentL_BufStart {
+     EditorPos 20 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpVentL_BufAct {
+     EditorPos 22 29
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpVentL_BufDone {
+     EditorPos 26 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpVentL_Src {
+     EditorPos 24 29
+     Source "EarPro.Default.AmpXpVentL"
+    }
+    AnimSrcNodeBlend AmpXpVentL_ActB {
+     EditorPos 23 28
+     BlendWeight "1"
+     Child0 "AmpXpVentL_BufAct"
+     Child1 "AmpXpVentL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpUnventL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 24
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 26
+       Child "AmpXpUnventL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 26
+       Child "AmpXpUnventL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 26
+       Child "AmpXpUnventL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000001E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000001F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpUnventL_BufStart {
+     EditorPos 30 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpUnventL_BufAct {
+     EditorPos 32 29
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpUnventL_BufDone {
+     EditorPos 36 28
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpUnventL_Src {
+     EditorPos 34 29
+     Source "EarPro.Default.AmpXpUnventL"
+    }
+    AnimSrcNodeBlend AmpXpUnventL_ActB {
+     EditorPos 33 28
+     BlendWeight "1"
+     Child0 "AmpXpUnventL_BufAct"
+     Child1 "AmpXpUnventL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpRaiseR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 32
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 34
+       Child "AmpXpRaiseR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 34
+       Child "AmpXpRaiseR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 34
+       Child "AmpXpRaiseR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000020}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000021}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseR_BufStart {
+     EditorPos 0 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseR_BufAct {
+     EditorPos 2 37
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseR_BufDone {
+     EditorPos 6 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpRaiseR_Src {
+     EditorPos 4 37
+     Source "EarPro.Default.AmpXpRaiseR"
+    }
+    AnimSrcNodeBlend AmpXpRaiseR_ActB {
+     EditorPos 3 36
+     BlendWeight "1"
+     Child0 "AmpXpRaiseR_BufAct"
+     Child1 "AmpXpRaiseR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpLowerR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 32
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 34
+       Child "AmpXpLowerR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 34
+       Child "AmpXpLowerR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 34
+       Child "AmpXpLowerR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000022}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000023}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpLowerR_BufStart {
+     EditorPos 10 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpLowerR_BufAct {
+     EditorPos 12 37
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpLowerR_BufDone {
+     EditorPos 16 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpLowerR_Src {
+     EditorPos 14 37
+     Source "EarPro.Default.AmpXpLowerR"
+    }
+    AnimSrcNodeBlend AmpXpLowerR_ActB {
+     EditorPos 13 36
+     BlendWeight "1"
+     Child0 "AmpXpLowerR_BufAct"
+     Child1 "AmpXpLowerR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpVentR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 32
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 34
+       Child "AmpXpVentR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 34
+       Child "AmpXpVentR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 34
+       Child "AmpXpVentR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000024}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000025}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpVentR_BufStart {
+     EditorPos 20 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpVentR_BufAct {
+     EditorPos 22 37
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpVentR_BufDone {
+     EditorPos 26 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpVentR_Src {
+     EditorPos 24 37
+     Source "EarPro.Default.AmpXpVentR"
+    }
+    AnimSrcNodeBlend AmpXpVentR_ActB {
+     EditorPos 23 36
+     BlendWeight "1"
+     Child0 "AmpXpVentR_BufAct"
+     Child1 "AmpXpVentR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpUnventR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 32
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 34
+       Child "AmpXpUnventR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 34
+       Child "AmpXpUnventR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 34
+       Child "AmpXpUnventR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000026}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000027}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpUnventR_BufStart {
+     EditorPos 30 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpUnventR_BufAct {
+     EditorPos 32 37
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpUnventR_BufDone {
+     EditorPos 36 36
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpUnventR_Src {
+     EditorPos 34 37
+     Source "EarPro.Default.AmpXpUnventR"
+    }
+    AnimSrcNodeBlend AmpXpUnventR_ActB {
+     EditorPos 33 36
+     BlendWeight "1"
+     Child0 "AmpXpUnventR_BufAct"
+     Child1 "AmpXpUnventR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpRaiseB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 40
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 42
+       Child "AmpXpRaiseB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 42
+       Child "AmpXpRaiseB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 42
+       Child "AmpXpRaiseB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000028}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000029}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseB_BufStart {
+     EditorPos 0 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseB_BufAct {
+     EditorPos 2 45
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpRaiseB_BufDone {
+     EditorPos 6 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpRaiseB_Src {
+     EditorPos 4 45
+     Source "EarPro.Default.AmpXpRaiseB"
+    }
+    AnimSrcNodeBlend AmpXpRaiseB_ActB {
+     EditorPos 3 44
+     BlendWeight "1"
+     Child0 "AmpXpRaiseB_BufAct"
+     Child1 "AmpXpRaiseB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpLowerB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 40
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 42
+       Child "AmpXpLowerB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 42
+       Child "AmpXpLowerB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 42
+       Child "AmpXpLowerB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000002A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000002B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpLowerB_BufStart {
+     EditorPos 10 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpLowerB_BufAct {
+     EditorPos 12 45
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpLowerB_BufDone {
+     EditorPos 16 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpLowerB_Src {
+     EditorPos 14 45
+     Source "EarPro.Default.AmpXpLowerB"
+    }
+    AnimSrcNodeBlend AmpXpLowerB_ActB {
+     EditorPos 13 44
+     BlendWeight "1"
+     Child0 "AmpXpLowerB_BufAct"
+     Child1 "AmpXpLowerB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpVentB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 40
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 42
+       Child "AmpXpVentB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 42
+       Child "AmpXpVentB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 42
+       Child "AmpXpVentB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000002C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000002D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpVentB_BufStart {
+     EditorPos 20 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpVentB_BufAct {
+     EditorPos 22 45
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpVentB_BufDone {
+     EditorPos 26 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpVentB_Src {
+     EditorPos 24 45
+     Source "EarPro.Default.AmpXpVentB"
+    }
+    AnimSrcNodeBlend AmpXpVentB_ActB {
+     EditorPos 23 44
+     BlendWeight "1"
+     Child0 "AmpXpVentB_BufAct"
+     Child1 "AmpXpVentB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_AmpXpUnventB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 40
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 42
+       Child "AmpXpUnventB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 42
+       Child "AmpXpUnventB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 42
+       Child "AmpXpUnventB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000002E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000002F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse AmpXpUnventB_BufStart {
+     EditorPos 30 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpUnventB_BufAct {
+     EditorPos 32 45
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse AmpXpUnventB_BufDone {
+     EditorPos 36 44
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource AmpXpUnventB_Src {
+     EditorPos 34 45
+     Source "EarPro.Default.AmpXpUnventB"
+    }
+    AnimSrcNodeBlend AmpXpUnventB_ActB {
+     EditorPos 33 44
+     BlendWeight "1"
+     Child0 "AmpXpUnventB_BufAct"
+     Child1 "AmpXpUnventB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsRaiseL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 48
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 50
+       Child "CtNsRaiseL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 50
+       Child "CtNsRaiseL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 50
+       Child "CtNsRaiseL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000030}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000031}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsRaiseL_BufStart {
+     EditorPos 0 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsRaiseL_BufAct {
+     EditorPos 2 53
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsRaiseL_BufDone {
+     EditorPos 6 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsRaiseL_Src {
+     EditorPos 4 53
+     Source "EarPro.Default.CtNsRaiseL"
+    }
+    AnimSrcNodeBlend CtNsRaiseL_ActB {
+     EditorPos 3 52
+     BlendWeight "1"
+     Child0 "CtNsRaiseL_BufAct"
+     Child1 "CtNsRaiseL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsLowerL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 48
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 50
+       Child "CtNsLowerL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 50
+       Child "CtNsLowerL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 50
+       Child "CtNsLowerL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000032}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000033}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsLowerL_BufStart {
+     EditorPos 10 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsLowerL_BufAct {
+     EditorPos 12 53
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsLowerL_BufDone {
+     EditorPos 16 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsLowerL_Src {
+     EditorPos 14 53
+     Source "EarPro.Default.CtNsLowerL"
+    }
+    AnimSrcNodeBlend CtNsLowerL_ActB {
+     EditorPos 13 52
+     BlendWeight "1"
+     Child0 "CtNsLowerL_BufAct"
+     Child1 "CtNsLowerL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsVentL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 48
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 50
+       Child "CtNsVentL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 50
+       Child "CtNsVentL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 50
+       Child "CtNsVentL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000034}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000035}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsVentL_BufStart {
+     EditorPos 20 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsVentL_BufAct {
+     EditorPos 22 53
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsVentL_BufDone {
+     EditorPos 26 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsVentL_Src {
+     EditorPos 24 53
+     Source "EarPro.Default.CtNsVentL"
+    }
+    AnimSrcNodeBlend CtNsVentL_ActB {
+     EditorPos 23 52
+     BlendWeight "1"
+     Child0 "CtNsVentL_BufAct"
+     Child1 "CtNsVentL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsUnventL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 48
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 50
+       Child "CtNsUnventL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 50
+       Child "CtNsUnventL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 50
+       Child "CtNsUnventL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000036}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000037}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsUnventL_BufStart {
+     EditorPos 30 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsUnventL_BufAct {
+     EditorPos 32 53
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsUnventL_BufDone {
+     EditorPos 36 52
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsUnventL_Src {
+     EditorPos 34 53
+     Source "EarPro.Default.CtNsUnventL"
+    }
+    AnimSrcNodeBlend CtNsUnventL_ActB {
+     EditorPos 33 52
+     BlendWeight "1"
+     Child0 "CtNsUnventL_BufAct"
+     Child1 "CtNsUnventL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsRaiseR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 56
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 58
+       Child "CtNsRaiseR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 58
+       Child "CtNsRaiseR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 58
+       Child "CtNsRaiseR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000038}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000039}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsRaiseR_BufStart {
+     EditorPos 0 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsRaiseR_BufAct {
+     EditorPos 2 61
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsRaiseR_BufDone {
+     EditorPos 6 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsRaiseR_Src {
+     EditorPos 4 61
+     Source "EarPro.Default.CtNsRaiseR"
+    }
+    AnimSrcNodeBlend CtNsRaiseR_ActB {
+     EditorPos 3 60
+     BlendWeight "1"
+     Child0 "CtNsRaiseR_BufAct"
+     Child1 "CtNsRaiseR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsLowerR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 56
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 58
+       Child "CtNsLowerR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 58
+       Child "CtNsLowerR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 58
+       Child "CtNsLowerR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000003A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000003B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsLowerR_BufStart {
+     EditorPos 10 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsLowerR_BufAct {
+     EditorPos 12 61
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsLowerR_BufDone {
+     EditorPos 16 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsLowerR_Src {
+     EditorPos 14 61
+     Source "EarPro.Default.CtNsLowerR"
+    }
+    AnimSrcNodeBlend CtNsLowerR_ActB {
+     EditorPos 13 60
+     BlendWeight "1"
+     Child0 "CtNsLowerR_BufAct"
+     Child1 "CtNsLowerR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsVentR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 56
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 58
+       Child "CtNsVentR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 58
+       Child "CtNsVentR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 58
+       Child "CtNsVentR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000003C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000003D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsVentR_BufStart {
+     EditorPos 20 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsVentR_BufAct {
+     EditorPos 22 61
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsVentR_BufDone {
+     EditorPos 26 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsVentR_Src {
+     EditorPos 24 61
+     Source "EarPro.Default.CtNsVentR"
+    }
+    AnimSrcNodeBlend CtNsVentR_ActB {
+     EditorPos 23 60
+     BlendWeight "1"
+     Child0 "CtNsVentR_BufAct"
+     Child1 "CtNsVentR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsUnventR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 56
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 58
+       Child "CtNsUnventR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 58
+       Child "CtNsUnventR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 58
+       Child "CtNsUnventR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000003E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000003F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsUnventR_BufStart {
+     EditorPos 30 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsUnventR_BufAct {
+     EditorPos 32 61
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsUnventR_BufDone {
+     EditorPos 36 60
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsUnventR_Src {
+     EditorPos 34 61
+     Source "EarPro.Default.CtNsUnventR"
+    }
+    AnimSrcNodeBlend CtNsUnventR_ActB {
+     EditorPos 33 60
+     BlendWeight "1"
+     Child0 "CtNsUnventR_BufAct"
+     Child1 "CtNsUnventR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsRaiseB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 64
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 66
+       Child "CtNsRaiseB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 66
+       Child "CtNsRaiseB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 66
+       Child "CtNsRaiseB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000040}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000041}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsRaiseB_BufStart {
+     EditorPos 0 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsRaiseB_BufAct {
+     EditorPos 2 69
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsRaiseB_BufDone {
+     EditorPos 6 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsRaiseB_Src {
+     EditorPos 4 69
+     Source "EarPro.Default.CtNsRaiseB"
+    }
+    AnimSrcNodeBlend CtNsRaiseB_ActB {
+     EditorPos 3 68
+     BlendWeight "1"
+     Child0 "CtNsRaiseB_BufAct"
+     Child1 "CtNsRaiseB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsLowerB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 64
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 66
+       Child "CtNsLowerB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 66
+       Child "CtNsLowerB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 66
+       Child "CtNsLowerB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000042}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000043}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsLowerB_BufStart {
+     EditorPos 10 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsLowerB_BufAct {
+     EditorPos 12 69
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsLowerB_BufDone {
+     EditorPos 16 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsLowerB_Src {
+     EditorPos 14 69
+     Source "EarPro.Default.CtNsLowerB"
+    }
+    AnimSrcNodeBlend CtNsLowerB_ActB {
+     EditorPos 13 68
+     BlendWeight "1"
+     Child0 "CtNsLowerB_BufAct"
+     Child1 "CtNsLowerB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsVentB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 64
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 66
+       Child "CtNsVentB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 66
+       Child "CtNsVentB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 66
+       Child "CtNsVentB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000044}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000045}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsVentB_BufStart {
+     EditorPos 20 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsVentB_BufAct {
+     EditorPos 22 69
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsVentB_BufDone {
+     EditorPos 26 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsVentB_Src {
+     EditorPos 24 69
+     Source "EarPro.Default.CtNsVentB"
+    }
+    AnimSrcNodeBlend CtNsVentB_ActB {
+     EditorPos 23 68
+     BlendWeight "1"
+     Child0 "CtNsVentB_BufAct"
+     Child1 "CtNsVentB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsUnventB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 64
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 66
+       Child "CtNsUnventB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 66
+       Child "CtNsUnventB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 66
+       Child "CtNsUnventB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000046}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000047}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsUnventB_BufStart {
+     EditorPos 30 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsUnventB_BufAct {
+     EditorPos 32 69
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsUnventB_BufDone {
+     EditorPos 36 68
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsUnventB_Src {
+     EditorPos 34 69
+     Source "EarPro.Default.CtNsUnventB"
+    }
+    AnimSrcNodeBlend CtNsUnventB_ActB {
+     EditorPos 33 68
+     BlendWeight "1"
+     Child0 "CtNsUnventB_BufAct"
+     Child1 "CtNsUnventB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpRaiseL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 72
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 74
+       Child "CtNsXpRaiseL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 74
+       Child "CtNsXpRaiseL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 74
+       Child "CtNsXpRaiseL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000048}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000049}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseL_BufStart {
+     EditorPos 0 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseL_BufAct {
+     EditorPos 2 77
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseL_BufDone {
+     EditorPos 6 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpRaiseL_Src {
+     EditorPos 4 77
+     Source "EarPro.Default.CtNsXpRaiseL"
+    }
+    AnimSrcNodeBlend CtNsXpRaiseL_ActB {
+     EditorPos 3 76
+     BlendWeight "1"
+     Child0 "CtNsXpRaiseL_BufAct"
+     Child1 "CtNsXpRaiseL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpLowerL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 72
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 74
+       Child "CtNsXpLowerL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 74
+       Child "CtNsXpLowerL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 74
+       Child "CtNsXpLowerL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000004A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000004B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerL_BufStart {
+     EditorPos 10 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerL_BufAct {
+     EditorPos 12 77
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerL_BufDone {
+     EditorPos 16 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpLowerL_Src {
+     EditorPos 14 77
+     Source "EarPro.Default.CtNsXpLowerL"
+    }
+    AnimSrcNodeBlend CtNsXpLowerL_ActB {
+     EditorPos 13 76
+     BlendWeight "1"
+     Child0 "CtNsXpLowerL_BufAct"
+     Child1 "CtNsXpLowerL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpVentL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 72
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 74
+       Child "CtNsXpVentL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 74
+       Child "CtNsXpVentL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 74
+       Child "CtNsXpVentL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000004C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000004D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpVentL_BufStart {
+     EditorPos 20 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpVentL_BufAct {
+     EditorPos 22 77
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpVentL_BufDone {
+     EditorPos 26 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpVentL_Src {
+     EditorPos 24 77
+     Source "EarPro.Default.CtNsXpVentL"
+    }
+    AnimSrcNodeBlend CtNsXpVentL_ActB {
+     EditorPos 23 76
+     BlendWeight "1"
+     Child0 "CtNsXpVentL_BufAct"
+     Child1 "CtNsXpVentL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpUnventL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 72
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 74
+       Child "CtNsXpUnventL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 74
+       Child "CtNsXpUnventL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 74
+       Child "CtNsXpUnventL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000004E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000004F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventL_BufStart {
+     EditorPos 30 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventL_BufAct {
+     EditorPos 32 77
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventL_BufDone {
+     EditorPos 36 76
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpUnventL_Src {
+     EditorPos 34 77
+     Source "EarPro.Default.CtNsXpUnventL"
+    }
+    AnimSrcNodeBlend CtNsXpUnventL_ActB {
+     EditorPos 33 76
+     BlendWeight "1"
+     Child0 "CtNsXpUnventL_BufAct"
+     Child1 "CtNsXpUnventL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpRaiseR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 80
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 82
+       Child "CtNsXpRaiseR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 82
+       Child "CtNsXpRaiseR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 82
+       Child "CtNsXpRaiseR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000050}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000051}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseR_BufStart {
+     EditorPos 0 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseR_BufAct {
+     EditorPos 2 85
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseR_BufDone {
+     EditorPos 6 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpRaiseR_Src {
+     EditorPos 4 85
+     Source "EarPro.Default.CtNsXpRaiseR"
+    }
+    AnimSrcNodeBlend CtNsXpRaiseR_ActB {
+     EditorPos 3 84
+     BlendWeight "1"
+     Child0 "CtNsXpRaiseR_BufAct"
+     Child1 "CtNsXpRaiseR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpLowerR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 80
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 82
+       Child "CtNsXpLowerR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 82
+       Child "CtNsXpLowerR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 82
+       Child "CtNsXpLowerR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000052}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000053}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerR_BufStart {
+     EditorPos 10 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerR_BufAct {
+     EditorPos 12 85
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerR_BufDone {
+     EditorPos 16 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpLowerR_Src {
+     EditorPos 14 85
+     Source "EarPro.Default.CtNsXpLowerR"
+    }
+    AnimSrcNodeBlend CtNsXpLowerR_ActB {
+     EditorPos 13 84
+     BlendWeight "1"
+     Child0 "CtNsXpLowerR_BufAct"
+     Child1 "CtNsXpLowerR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpVentR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 80
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 82
+       Child "CtNsXpVentR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 82
+       Child "CtNsXpVentR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 82
+       Child "CtNsXpVentR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000054}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000055}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpVentR_BufStart {
+     EditorPos 20 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpVentR_BufAct {
+     EditorPos 22 85
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpVentR_BufDone {
+     EditorPos 26 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpVentR_Src {
+     EditorPos 24 85
+     Source "EarPro.Default.CtNsXpVentR"
+    }
+    AnimSrcNodeBlend CtNsXpVentR_ActB {
+     EditorPos 23 84
+     BlendWeight "1"
+     Child0 "CtNsXpVentR_BufAct"
+     Child1 "CtNsXpVentR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpUnventR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 80
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 82
+       Child "CtNsXpUnventR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 82
+       Child "CtNsXpUnventR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 82
+       Child "CtNsXpUnventR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000056}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000057}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventR_BufStart {
+     EditorPos 30 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventR_BufAct {
+     EditorPos 32 85
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventR_BufDone {
+     EditorPos 36 84
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpUnventR_Src {
+     EditorPos 34 85
+     Source "EarPro.Default.CtNsXpUnventR"
+    }
+    AnimSrcNodeBlend CtNsXpUnventR_ActB {
+     EditorPos 33 84
+     BlendWeight "1"
+     Child0 "CtNsXpUnventR_BufAct"
+     Child1 "CtNsXpUnventR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpRaiseB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 88
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 90
+       Child "CtNsXpRaiseB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 90
+       Child "CtNsXpRaiseB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 90
+       Child "CtNsXpRaiseB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000058}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000059}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseB_BufStart {
+     EditorPos 0 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseB_BufAct {
+     EditorPos 2 93
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpRaiseB_BufDone {
+     EditorPos 6 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpRaiseB_Src {
+     EditorPos 4 93
+     Source "EarPro.Default.CtNsXpRaiseB"
+    }
+    AnimSrcNodeBlend CtNsXpRaiseB_ActB {
+     EditorPos 3 92
+     BlendWeight "1"
+     Child0 "CtNsXpRaiseB_BufAct"
+     Child1 "CtNsXpRaiseB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpLowerB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 88
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 90
+       Child "CtNsXpLowerB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 90
+       Child "CtNsXpLowerB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 90
+       Child "CtNsXpLowerB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000005A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000005B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerB_BufStart {
+     EditorPos 10 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerB_BufAct {
+     EditorPos 12 93
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpLowerB_BufDone {
+     EditorPos 16 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpLowerB_Src {
+     EditorPos 14 93
+     Source "EarPro.Default.CtNsXpLowerB"
+    }
+    AnimSrcNodeBlend CtNsXpLowerB_ActB {
+     EditorPos 13 92
+     BlendWeight "1"
+     Child0 "CtNsXpLowerB_BufAct"
+     Child1 "CtNsXpLowerB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpVentB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 88
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 90
+       Child "CtNsXpVentB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 90
+       Child "CtNsXpVentB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 90
+       Child "CtNsXpVentB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000005C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000005D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpVentB_BufStart {
+     EditorPos 20 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpVentB_BufAct {
+     EditorPos 22 93
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpVentB_BufDone {
+     EditorPos 26 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpVentB_Src {
+     EditorPos 24 93
+     Source "EarPro.Default.CtNsXpVentB"
+    }
+    AnimSrcNodeBlend CtNsXpVentB_ActB {
+     EditorPos 23 92
+     BlendWeight "1"
+     Child0 "CtNsXpVentB_BufAct"
+     Child1 "CtNsXpVentB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtNsXpUnventB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 88
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 90
+       Child "CtNsXpUnventB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 90
+       Child "CtNsXpUnventB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 90
+       Child "CtNsXpUnventB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000005E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000005F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventB_BufStart {
+     EditorPos 30 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventB_BufAct {
+     EditorPos 32 93
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtNsXpUnventB_BufDone {
+     EditorPos 36 92
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtNsXpUnventB_Src {
+     EditorPos 34 93
+     Source "EarPro.Default.CtNsXpUnventB"
+    }
+    AnimSrcNodeBlend CtNsXpUnventB_ActB {
+     EditorPos 33 92
+     BlendWeight "1"
+     Child0 "CtNsXpUnventB_BufAct"
+     Child1 "CtNsXpUnventB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViRaiseL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 96
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 98
+       Child "CtViRaiseL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 98
+       Child "CtViRaiseL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 98
+       Child "CtViRaiseL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000060}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000061}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViRaiseL_BufStart {
+     EditorPos 0 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViRaiseL_BufAct {
+     EditorPos 2 101
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViRaiseL_BufDone {
+     EditorPos 6 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViRaiseL_Src {
+     EditorPos 4 101
+     Source "EarPro.Default.CtViRaiseL"
+    }
+    AnimSrcNodeBlend CtViRaiseL_ActB {
+     EditorPos 3 100
+     BlendWeight "1"
+     Child0 "CtViRaiseL_BufAct"
+     Child1 "CtViRaiseL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViLowerL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 96
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 98
+       Child "CtViLowerL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 98
+       Child "CtViLowerL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 98
+       Child "CtViLowerL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000062}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000063}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViLowerL_BufStart {
+     EditorPos 10 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViLowerL_BufAct {
+     EditorPos 12 101
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViLowerL_BufDone {
+     EditorPos 16 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViLowerL_Src {
+     EditorPos 14 101
+     Source "EarPro.Default.CtViLowerL"
+    }
+    AnimSrcNodeBlend CtViLowerL_ActB {
+     EditorPos 13 100
+     BlendWeight "1"
+     Child0 "CtViLowerL_BufAct"
+     Child1 "CtViLowerL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViVentL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 96
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 98
+       Child "CtViVentL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 98
+       Child "CtViVentL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 98
+       Child "CtViVentL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000064}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000065}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViVentL_BufStart {
+     EditorPos 20 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViVentL_BufAct {
+     EditorPos 22 101
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViVentL_BufDone {
+     EditorPos 26 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViVentL_Src {
+     EditorPos 24 101
+     Source "EarPro.Default.CtViVentL"
+    }
+    AnimSrcNodeBlend CtViVentL_ActB {
+     EditorPos 23 100
+     BlendWeight "1"
+     Child0 "CtViVentL_BufAct"
+     Child1 "CtViVentL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViUnventL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 96
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 98
+       Child "CtViUnventL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 98
+       Child "CtViUnventL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 98
+       Child "CtViUnventL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000066}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000067}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViUnventL_BufStart {
+     EditorPos 30 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViUnventL_BufAct {
+     EditorPos 32 101
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViUnventL_BufDone {
+     EditorPos 36 100
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViUnventL_Src {
+     EditorPos 34 101
+     Source "EarPro.Default.CtViUnventL"
+    }
+    AnimSrcNodeBlend CtViUnventL_ActB {
+     EditorPos 33 100
+     BlendWeight "1"
+     Child0 "CtViUnventL_BufAct"
+     Child1 "CtViUnventL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViRaiseR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 104
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 106
+       Child "CtViRaiseR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 106
+       Child "CtViRaiseR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 106
+       Child "CtViRaiseR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000068}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000069}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViRaiseR_BufStart {
+     EditorPos 0 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViRaiseR_BufAct {
+     EditorPos 2 109
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViRaiseR_BufDone {
+     EditorPos 6 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViRaiseR_Src {
+     EditorPos 4 109
+     Source "EarPro.Default.CtViRaiseR"
+    }
+    AnimSrcNodeBlend CtViRaiseR_ActB {
+     EditorPos 3 108
+     BlendWeight "1"
+     Child0 "CtViRaiseR_BufAct"
+     Child1 "CtViRaiseR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViLowerR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 104
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 106
+       Child "CtViLowerR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 106
+       Child "CtViLowerR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 106
+       Child "CtViLowerR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000006A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000006B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViLowerR_BufStart {
+     EditorPos 10 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViLowerR_BufAct {
+     EditorPos 12 109
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViLowerR_BufDone {
+     EditorPos 16 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViLowerR_Src {
+     EditorPos 14 109
+     Source "EarPro.Default.CtViLowerR"
+    }
+    AnimSrcNodeBlend CtViLowerR_ActB {
+     EditorPos 13 108
+     BlendWeight "1"
+     Child0 "CtViLowerR_BufAct"
+     Child1 "CtViLowerR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViVentR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 104
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 106
+       Child "CtViVentR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 106
+       Child "CtViVentR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 106
+       Child "CtViVentR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000006C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000006D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViVentR_BufStart {
+     EditorPos 20 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViVentR_BufAct {
+     EditorPos 22 109
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViVentR_BufDone {
+     EditorPos 26 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViVentR_Src {
+     EditorPos 24 109
+     Source "EarPro.Default.CtViVentR"
+    }
+    AnimSrcNodeBlend CtViVentR_ActB {
+     EditorPos 23 108
+     BlendWeight "1"
+     Child0 "CtViVentR_BufAct"
+     Child1 "CtViVentR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViUnventR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 104
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 106
+       Child "CtViUnventR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 106
+       Child "CtViUnventR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 106
+       Child "CtViUnventR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000006E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000006F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViUnventR_BufStart {
+     EditorPos 30 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViUnventR_BufAct {
+     EditorPos 32 109
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViUnventR_BufDone {
+     EditorPos 36 108
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViUnventR_Src {
+     EditorPos 34 109
+     Source "EarPro.Default.CtViUnventR"
+    }
+    AnimSrcNodeBlend CtViUnventR_ActB {
+     EditorPos 33 108
+     BlendWeight "1"
+     Child0 "CtViUnventR_BufAct"
+     Child1 "CtViUnventR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViRaiseB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 112
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 114
+       Child "CtViRaiseB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 114
+       Child "CtViRaiseB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 114
+       Child "CtViRaiseB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000070}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000071}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViRaiseB_BufStart {
+     EditorPos 0 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViRaiseB_BufAct {
+     EditorPos 2 117
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViRaiseB_BufDone {
+     EditorPos 6 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViRaiseB_Src {
+     EditorPos 4 117
+     Source "EarPro.Default.CtViRaiseB"
+    }
+    AnimSrcNodeBlend CtViRaiseB_ActB {
+     EditorPos 3 116
+     BlendWeight "1"
+     Child0 "CtViRaiseB_BufAct"
+     Child1 "CtViRaiseB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViLowerB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 112
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 114
+       Child "CtViLowerB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 114
+       Child "CtViLowerB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 114
+       Child "CtViLowerB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000072}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000073}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViLowerB_BufStart {
+     EditorPos 10 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViLowerB_BufAct {
+     EditorPos 12 117
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViLowerB_BufDone {
+     EditorPos 16 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViLowerB_Src {
+     EditorPos 14 117
+     Source "EarPro.Default.CtViLowerB"
+    }
+    AnimSrcNodeBlend CtViLowerB_ActB {
+     EditorPos 13 116
+     BlendWeight "1"
+     Child0 "CtViLowerB_BufAct"
+     Child1 "CtViLowerB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViVentB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 112
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 114
+       Child "CtViVentB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 114
+       Child "CtViVentB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 114
+       Child "CtViVentB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000074}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000075}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViVentB_BufStart {
+     EditorPos 20 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViVentB_BufAct {
+     EditorPos 22 117
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViVentB_BufDone {
+     EditorPos 26 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViVentB_Src {
+     EditorPos 24 117
+     Source "EarPro.Default.CtViVentB"
+    }
+    AnimSrcNodeBlend CtViVentB_ActB {
+     EditorPos 23 116
+     BlendWeight "1"
+     Child0 "CtViVentB_BufAct"
+     Child1 "CtViVentB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViUnventB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 112
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 114
+       Child "CtViUnventB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 114
+       Child "CtViUnventB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 114
+       Child "CtViUnventB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000076}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000077}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViUnventB_BufStart {
+     EditorPos 30 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViUnventB_BufAct {
+     EditorPos 32 117
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViUnventB_BufDone {
+     EditorPos 36 116
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViUnventB_Src {
+     EditorPos 34 117
+     Source "EarPro.Default.CtViUnventB"
+    }
+    AnimSrcNodeBlend CtViUnventB_ActB {
+     EditorPos 33 116
+     BlendWeight "1"
+     Child0 "CtViUnventB_BufAct"
+     Child1 "CtViUnventB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpRaiseL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 120
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 122
+       Child "CtViXpRaiseL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 122
+       Child "CtViXpRaiseL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 122
+       Child "CtViXpRaiseL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000078}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000079}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseL_BufStart {
+     EditorPos 0 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseL_BufAct {
+     EditorPos 2 125
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseL_BufDone {
+     EditorPos 6 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpRaiseL_Src {
+     EditorPos 4 125
+     Source "EarPro.Default.CtViXpRaiseL"
+    }
+    AnimSrcNodeBlend CtViXpRaiseL_ActB {
+     EditorPos 3 124
+     BlendWeight "1"
+     Child0 "CtViXpRaiseL_BufAct"
+     Child1 "CtViXpRaiseL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpLowerL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 120
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 122
+       Child "CtViXpLowerL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 122
+       Child "CtViXpLowerL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 122
+       Child "CtViXpLowerL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000007A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000007B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpLowerL_BufStart {
+     EditorPos 10 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpLowerL_BufAct {
+     EditorPos 12 125
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpLowerL_BufDone {
+     EditorPos 16 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpLowerL_Src {
+     EditorPos 14 125
+     Source "EarPro.Default.CtViXpLowerL"
+    }
+    AnimSrcNodeBlend CtViXpLowerL_ActB {
+     EditorPos 13 124
+     BlendWeight "1"
+     Child0 "CtViXpLowerL_BufAct"
+     Child1 "CtViXpLowerL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpVentL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 120
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 122
+       Child "CtViXpVentL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 122
+       Child "CtViXpVentL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 122
+       Child "CtViXpVentL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000007C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000007D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpVentL_BufStart {
+     EditorPos 20 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpVentL_BufAct {
+     EditorPos 22 125
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpVentL_BufDone {
+     EditorPos 26 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpVentL_Src {
+     EditorPos 24 125
+     Source "EarPro.Default.CtViXpVentL"
+    }
+    AnimSrcNodeBlend CtViXpVentL_ActB {
+     EditorPos 23 124
+     BlendWeight "1"
+     Child0 "CtViXpVentL_BufAct"
+     Child1 "CtViXpVentL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpUnventL {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 120
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 122
+       Child "CtViXpUnventL_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 122
+       Child "CtViXpUnventL_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 122
+       Child "CtViXpUnventL_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000007E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000007F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpUnventL_BufStart {
+     EditorPos 30 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpUnventL_BufAct {
+     EditorPos 32 125
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpUnventL_BufDone {
+     EditorPos 36 124
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpUnventL_Src {
+     EditorPos 34 125
+     Source "EarPro.Default.CtViXpUnventL"
+    }
+    AnimSrcNodeBlend CtViXpUnventL_ActB {
+     EditorPos 33 124
+     BlendWeight "1"
+     Child0 "CtViXpUnventL_BufAct"
+     Child1 "CtViXpUnventL_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpRaiseR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 128
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 130
+       Child "CtViXpRaiseR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 130
+       Child "CtViXpRaiseR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 130
+       Child "CtViXpRaiseR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000080}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000081}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseR_BufStart {
+     EditorPos 0 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseR_BufAct {
+     EditorPos 2 133
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseR_BufDone {
+     EditorPos 6 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpRaiseR_Src {
+     EditorPos 4 133
+     Source "EarPro.Default.CtViXpRaiseR"
+    }
+    AnimSrcNodeBlend CtViXpRaiseR_ActB {
+     EditorPos 3 132
+     BlendWeight "1"
+     Child0 "CtViXpRaiseR_BufAct"
+     Child1 "CtViXpRaiseR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpLowerR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 128
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 130
+       Child "CtViXpLowerR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 130
+       Child "CtViXpLowerR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 130
+       Child "CtViXpLowerR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000082}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000083}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpLowerR_BufStart {
+     EditorPos 10 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpLowerR_BufAct {
+     EditorPos 12 133
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpLowerR_BufDone {
+     EditorPos 16 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpLowerR_Src {
+     EditorPos 14 133
+     Source "EarPro.Default.CtViXpLowerR"
+    }
+    AnimSrcNodeBlend CtViXpLowerR_ActB {
+     EditorPos 13 132
+     BlendWeight "1"
+     Child0 "CtViXpLowerR_BufAct"
+     Child1 "CtViXpLowerR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpVentR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 128
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 130
+       Child "CtViXpVentR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 130
+       Child "CtViXpVentR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 130
+       Child "CtViXpVentR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000084}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000085}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpVentR_BufStart {
+     EditorPos 20 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpVentR_BufAct {
+     EditorPos 22 133
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpVentR_BufDone {
+     EditorPos 26 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpVentR_Src {
+     EditorPos 24 133
+     Source "EarPro.Default.CtViXpVentR"
+    }
+    AnimSrcNodeBlend CtViXpVentR_ActB {
+     EditorPos 23 132
+     BlendWeight "1"
+     Child0 "CtViXpVentR_BufAct"
+     Child1 "CtViXpVentR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpUnventR {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 128
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 130
+       Child "CtViXpUnventR_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 130
+       Child "CtViXpUnventR_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 130
+       Child "CtViXpUnventR_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000086}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000087}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpUnventR_BufStart {
+     EditorPos 30 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpUnventR_BufAct {
+     EditorPos 32 133
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpUnventR_BufDone {
+     EditorPos 36 132
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpUnventR_Src {
+     EditorPos 34 133
+     Source "EarPro.Default.CtViXpUnventR"
+    }
+    AnimSrcNodeBlend CtViXpUnventR_ActB {
+     EditorPos 33 132
+     BlendWeight "1"
+     Child0 "CtViXpUnventR_BufAct"
+     Child1 "CtViXpUnventR_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpRaiseB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 0 136
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 0 138
+       Child "CtViXpRaiseB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 3 138
+       Child "CtViXpRaiseB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 6 138
+       Child "CtViXpRaiseB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A10000000000088}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A10000000000089}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseB_BufStart {
+     EditorPos 0 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseB_BufAct {
+     EditorPos 2 141
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpRaiseB_BufDone {
+     EditorPos 6 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpRaiseB_Src {
+     EditorPos 4 141
+     Source "EarPro.Default.CtViXpRaiseB"
+    }
+    AnimSrcNodeBlend CtViXpRaiseB_ActB {
+     EditorPos 3 140
+     BlendWeight "1"
+     Child0 "CtViXpRaiseB_BufAct"
+     Child1 "CtViXpRaiseB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpLowerB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 10 136
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 10 138
+       Child "CtViXpLowerB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 13 138
+       Child "CtViXpLowerB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 16 138
+       Child "CtViXpLowerB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000008A}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000008B}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpLowerB_BufStart {
+     EditorPos 10 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpLowerB_BufAct {
+     EditorPos 12 141
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpLowerB_BufDone {
+     EditorPos 16 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpLowerB_Src {
+     EditorPos 14 141
+     Source "EarPro.Default.CtViXpLowerB"
+    }
+    AnimSrcNodeBlend CtViXpLowerB_ActB {
+     EditorPos 13 140
+     BlendWeight "1"
+     Child0 "CtViXpLowerB_BufAct"
+     Child1 "CtViXpLowerB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpVentB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 20 136
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 20 138
+       Child "CtViXpVentB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 23 138
+       Child "CtViXpVentB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 26 138
+       Child "CtViXpVentB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000008C}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000008D}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpVentB_BufStart {
+     EditorPos 20 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpVentB_BufAct {
+     EditorPos 22 141
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpVentB_BufDone {
+     EditorPos 26 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpVentB_Src {
+     EditorPos 24 141
+     Source "EarPro.Default.CtViXpVentB"
+    }
+    AnimSrcNodeBlend CtViXpVentB_ActB {
+     EditorPos 23 140
+     BlendWeight "1"
+     Child0 "CtViXpVentB_BufAct"
+     Child1 "CtViXpVentB_Src"
+     Optimization "Always eval both"
+    }
+    AnimSrcNodeStateMachine MC_CtViXpUnventB {
+     Tags {
+      "TagGadget"
+     }
+     EditorPos 30 136
+     states {
+      AnimSrcNodeState Start {
+       EditorPos 30 138
+       Child "CtViXpUnventB_BufStart"
+       StartCondition "true"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Act {
+       EditorPos 33 138
+       Child "CtViXpUnventB_ActB"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+      AnimSrcNodeState Done {
+       EditorPos 36 138
+       Child "CtViXpUnventB_BufDone"
+       StartCondition "false"
+       TimeStorage "Real Time"
+      }
+     }
+     transitions {
+      AnimSrcNodeTransition "{5A1000000000008E}" {
+       FromState "Start"
+       ToState "Act"
+       Duration "0.3"
+       Condition "true"
+       BlendFn S
+      }
+      AnimSrcNodeTransition "{5A1000000000008F}" {
+       FromState "Act"
+       ToState "Done"
+       Duration "0.35"
+       Condition "RemainingTimeLess(0.35)"
+       BlendFn S
+      }
+     }
+    }
+    AnimSrcNodeBufferUse CtViXpUnventB_BufStart {
+     EditorPos 30 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpUnventB_BufAct {
+     EditorPos 32 141
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeBufferUse CtViXpUnventB_BufDone {
+     EditorPos 36 140
+     BufferName "FullbodyGadget"
+    }
+    AnimSrcNodeSource CtViXpUnventB_Src {
+     EditorPos 34 141
+     Source "EarPro.Default.CtViXpUnventB"
+    }
+    AnimSrcNodeBlend CtViXpUnventB_ActB {
+     EditorPos 33 140
+     BlendWeight "1"
+     Child0 "CtViXpUnventB_BufAct"
+     Child1 "CtViXpUnventB_Src"
+     Optimization "Always eval both"
+    }
+   }
+  }
+ }
+}

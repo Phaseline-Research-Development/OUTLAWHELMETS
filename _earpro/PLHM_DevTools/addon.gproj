@@ -1,0 +1,13 @@
+GameProject {
+ ID "PLHM_DevTools"
+ GUID "7FB2472FBB0D61CB"
+ TITLE "Phaseline Helmets - ear-pro test tools (test only, never shipped)"
+ Dependencies {
+  "58D0FB3206B6F859"
+  "697C1B4763225DB8"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+ }
+}

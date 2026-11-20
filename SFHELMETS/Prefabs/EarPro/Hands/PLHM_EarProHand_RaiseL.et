@@ -1,0 +1,41 @@
+GenericEntity {
+ ID "040654821A5CF725"
+ components {
+  InventoryItemComponent "{B8A863F664B9C48D}" {
+   Attributes SCR_ItemAttributeCollection "{429BB8DA8FD6E9D4}" {
+    ItemDisplayName UIInfo "{73FB9D2C6555764B}" {
+     Name "Ear protection (hand)"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{025150A47977BE33}" {
+     Weight 0
+     SizeSetupStrategy Manual
+     ItemDimensions 0 0 0
+     ItemVolume 0
+     DimensionScaler 0
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{1977151CB44A0F26}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{CED57F735D98A848}" {
+       AnimGraph "{8A62051481BE2E93}anims/EarPro/workspaces/PLHM_EarPro.agr"
+       AnimInstance "{B7ECBCCEC8F8E072}anims/EarPro/workspaces/PLHM_EarPro_RaiseL.asi"
+       StartNode "MC_RaiseL"
+       BindingName "Gadget"
+      }
+     }
+    }
+    m_Size SLOT_1x1
+    m_SlotType SLOT_ANY
+    m_bDraggable 0
+    m_bVisible 0
+    m_bStackable 0
+   }
+  }
+  PLHM_EarProHandComponent "{D9FB5A0B328D021D}" {
+  }
+  RplComponent "{7712199AF28A9680}" {
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{2D7BB8DA79A9A171}" {
+  }
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "out_dir": "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/_earpro/build/anim",
+ "rig_report": "C:/Users/tyler/OneDrive/Desktop/github/OUTLAWHELMETS/_earpro/blender/data/amp_rig_report.json",
+ "palm_gap": 0.003,
+ "profiles": {
+  "PLHM_LArmABS": [
+   "L"
+  ],
+  "PLHM_RArmABS": [
+   "R"
+  ],
+  "PLHM_ArmsABS": [
+   "L",
+   "R"
+  ]
+ },
+ "clips": {
+  "plhm_amp_raise_L": {
+   "sides": [
+    "L"
+   ],
+   "duration": 2.3,
+   "phases": {
+    "reach_end": 0.45,
+    "release_start": 1.75,
+    "release_end": 1.92,
+    "return_end": 2.3
+   },
+   "cup_keys": {
+    "L": {
+     "splay": [
+      [
+       0.45,
+       0
+      ],
+      [
+       0.736,
+       44
+      ],
+      [
+       1.36,
+       44
+      ],
+      [
+       1.698,
+       24
+      ]
+     ],
+     "swing": [
+      [
+       0.645,
+       0
+      ],
+      [
+       1.516,
+       161.5
+      ]
+     ],
+     "yaw": [
+      [
+       1.256,
+       0
+      ],
+      [
+       1.698,
+       46.5
+      ]
+     ],
+     "spin": [
+      [
+       1.256,
+       0
+      ],
+      [
+       1.698,
+       -4.5
+      ]
+     ]
+    }
+   },
+   "grip": {
+    "out": 0.121,
+    "fwd": -0.025,
+    "z": 1.642
+   }
+  }
+ }
+}

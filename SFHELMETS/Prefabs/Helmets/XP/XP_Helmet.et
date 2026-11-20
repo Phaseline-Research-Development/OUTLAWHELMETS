@@ -127,8 +127,8 @@ GameEntity {
      AreaType OUTLAW_Helmet_XPCounterweight "{9D013FEE12171EFC}" {
      }
     }
-    LoadoutSlotInfo Earpro {
-     InheritParentSkeleton 1
+    LoadoutSlotInfo Headset {
+     PivotID "Head"
      AreaType OUTLAW_Helmet_XPEarPro "{FB44D2BF4D55D57D}" {
      }
     }

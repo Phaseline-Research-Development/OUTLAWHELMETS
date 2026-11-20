@@ -1,0 +1,20 @@
+MetaFileClass {
+ Name "{70090254FE5918FE}anims/EarPro/txa/plhm_ctvi_vent_L.anm"
+ Configurations {
+  TXAResourceClass PC {
+   SourceProfile "PLHM_LArmABS"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass XBOX_SERIES : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass PS5 : PC {
+  }
+  TXAResourceClass HEADLESS : PC {
+  }
+  TXAResourceClass Xbox : PC {
+  }
+ }
+}
